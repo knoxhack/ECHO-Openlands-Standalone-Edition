@@ -1,0 +1,254 @@
+{
+  "schema": "echo.openlands.edition.old_road_network_report.v1",
+  "status": "preflight_passed",
+  "realRuntimeOldRoadNetworkRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:06.238Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "contracts": {
+    "blocks": "data/echoopenlandsprotocol/openlands/blocks/mvp_blocks.json",
+    "items": "data/echoopenlandsprotocol/openlands/items/mvp_items.json",
+    "recipes": "data/echoopenlandsprotocol/openlands/recipes/mvp_recipes.json",
+    "landmarks": "data/echoopenlandsprotocol/openlands/structures/mvp_landmarks.json",
+    "waystones": "data/echoopenlandsprotocol/openlands/waystones/waystone_contract.json",
+    "holomap": "data/echoopenlandsprotocol/openlands/holomap/mvp_regions.json",
+    "playtest": "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+    "runtimePlan": "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json"
+  },
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/blocks/mvp_blocks.json",
+      "data/echoopenlandsprotocol/openlands/items/mvp_items.json",
+      "data/echoopenlandsprotocol/openlands/recipes/mvp_recipes.json",
+      "data/echoopenlandsprotocol/openlands/structures/mvp_landmarks.json",
+      "data/echoopenlandsprotocol/openlands/waystones/waystone_contract.json",
+      "data/echoopenlandsprotocol/openlands/holomap/mvp_regions.json",
+      "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json"
+    ]
+  },
+  "counts": {
+    "oldRoadBlocks": 5,
+    "routeItems": 4,
+    "routeRecipes": 4,
+    "roadLandmarks": 5,
+    "holomapOldRoadLayers": 2
+  },
+  "oldRoadBlockIds": [
+    "old_road_block",
+    "old_road_marker",
+    "broken_waystone",
+    "restored_waystone",
+    "waystone_plinth"
+  ],
+  "routeItemIds": [
+    "region_rubbing",
+    "old_road_token",
+    "waystone_core",
+    "route_binding"
+  ],
+  "routeRecipeIds": [
+    "region_rubbing",
+    "old_road_token",
+    "waystone_core",
+    "route_binding"
+  ],
+  "roadLandmarkIds": [
+    "ruined_well",
+    "road_marker",
+    "watchtower",
+    "broken_bridge",
+    "broken_waystone_site"
+  ],
+  "routeRecipeSummaries": [
+    {
+      "id": "region_rubbing",
+      "station": "map_table",
+      "contextInputs": [
+        "discovered_region_marker"
+      ],
+      "itemInputs": [
+        {
+          "item": "echomaterialcore:fieldstone_piece",
+          "count": 1
+        },
+        {
+          "item": "echomaterialcore:charcoal_lump",
+          "count": 1
+        }
+      ],
+      "outputs": [
+        {
+          "item": "region_rubbing",
+          "count": 1
+        }
+      ],
+      "unlockedBy": [
+        "discover:old_road_marker"
+      ]
+    },
+    {
+      "id": "old_road_token",
+      "station": "map_table",
+      "contextInputs": [
+        "walked_old_road_segment"
+      ],
+      "itemInputs": [
+        {
+          "item": "region_rubbing",
+          "count": 1
+        }
+      ],
+      "outputs": [
+        {
+          "item": "old_road_token",
+          "count": 1
+        }
+      ],
+      "unlockedBy": [
+        "discover:old_road_block"
+      ]
+    },
+    {
+      "id": "waystone_core",
+      "station": "map_table",
+      "contextInputs": [],
+      "itemInputs": [
+        {
+          "item": "glow_crystal",
+          "count": 1
+        },
+        {
+          "item": "cupral_fitting",
+          "count": 4
+        },
+        {
+          "item": "region_rubbing",
+          "count": 1
+        }
+      ],
+      "outputs": [
+        {
+          "item": "waystone_core",
+          "count": 1
+        }
+      ],
+      "unlockedBy": [
+        "repair_state:stone_repaired",
+        "obtain:item/glow_crystal"
+      ]
+    },
+    {
+      "id": "route_binding",
+      "station": "map_table",
+      "contextInputs": [
+        "two_discovered_waystones"
+      ],
+      "itemInputs": [
+        {
+          "item": "old_road_token",
+          "count": 2
+        },
+        {
+          "item": "region_rubbing",
+          "count": 1
+        }
+      ],
+      "outputs": [
+        {
+          "item": "route_binding",
+          "count": 1
+        }
+      ],
+      "unlockedBy": [
+        "waystone:two_discovered"
+      ]
+    }
+  ],
+  "holomapOldRoadContract": {
+    "storedField": "oldRoadSegments",
+    "oldRoadLayer": "old_roads",
+    "oldRoadLayerSource": "old_road_block_and_marker_discovery",
+    "roadSegmentHint": "road_segment",
+    "roadSegmentRevealSources": [
+      "walked_old_road",
+      "old_road_token"
+    ]
+  },
+  "waystoneRouteContract": {
+    "boundStateConsumes": "route_binding",
+    "boundStateOutputs": [
+      "route_id",
+      "trader_interest"
+    ],
+    "activeStateOutputs": [
+      "map_reveal:wide_radius",
+      "nearby_hints:1-3",
+      "trader_visit_eligible",
+      "fast_travel_if_two_active"
+    ],
+    "fastTravelRequiresActiveStones": 2,
+    "travelPermissionDefault": "public_after_active",
+    "multiplayerStoredFields": [
+      "waystoneId",
+      "regionId",
+      "customName",
+      "state",
+      "ownerPlayerId",
+      "ownerGroupId",
+      "isPublicTravel",
+      "canPublicRename",
+      "repairContributorIds",
+      "linkedRouteIds",
+      "lastActivatedAt"
+    ]
+  },
+  "playtestCoverage": {
+    "explorationScenario": "first_exploration_hook",
+    "explorationAssertions": [
+      "landmark_discovery_writes_holomap_or_fallback_state",
+      "old_road_marker_writes_old_road_segment",
+      "region_hint_is_visible_after_discovery"
+    ],
+    "firstWaystoneScenario": "first_waystone",
+    "firstWaystoneCheckpoint": "after_first_waystone_repair",
+    "publicAlphaScenario": "two_active_waystones_unlock_travel"
+  },
+  "oldRoadNetworkLoadStep": {
+    "id": "bind_waystones_holomap_and_multiplayer_state",
+    "successSignal": "openlands_waystone_network_bound",
+    "requiredEvidence": [
+      "waystone_state_persistence_ready",
+      "holomap_region_persistence_ready",
+      "multiplayer_permissions_bound"
+    ]
+  },
+  "blockedBy": [
+    "real_runtime_old_road_generation_missing",
+    "old_road_segment_walk_recording_missing",
+    "map_table_route_binding_runtime_missing",
+    "holomap_old_road_reveal_runtime_missing",
+    "waystone_link_travel_runtime_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-old-road-network-report.json",
+  "proofs": [
+    "old_road_blocks_declared",
+    "old_road_items_declared",
+    "road_landmarks_resolve",
+    "map_table_route_recipes_resolve",
+    "holomap_old_road_layer_resolves",
+    "waystone_route_state_fields_resolve",
+    "old_road_playtest_acceptance_resolves",
+    "runtime_load_step_binds_old_road_network",
+    "compiled_artifact_contains_old_road_contracts",
+    "public_alpha_blocked_until_real_old_road_runtime_execution"
+  ]
+}

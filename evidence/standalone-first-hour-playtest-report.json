@@ -1,0 +1,138 @@
+{
+  "schema": "echo.openlands.edition.first_hour_playtest_report.v1",
+  "status": "preflight_passed",
+  "realRuntimePlaytestRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:06.530Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "defaultMode": "openlands_standard",
+  "playtestFixture": "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+  "routeContract": "data/echoopenlandsprotocol/openlands/progression/first_hour_route.json",
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/progression/first_hour_route.json",
+      "data/echoopenlandsprotocol/openlands/tutorials/first_hour_prompts.json",
+      "data/echoopenlandsprotocol/openlands/holomap/mvp_regions.json",
+      "com/knoxhack/echoopenlandsprotocol/runtime/OpenlandsFirstHourRuntime.class"
+    ]
+  },
+  "scenarioSummaries": [
+    {
+      "id": "safe_spawn",
+      "routeStep": "safe_spawn",
+      "targetTimeMinutes": "0-2",
+      "runtimeActions": 2,
+      "assertions": 9,
+      "successEvidence": [
+        "starter_spawn_guarantees_bound"
+      ]
+    },
+    {
+      "id": "first_gathering",
+      "routeStep": "first_gathering",
+      "targetTimeMinutes": "2-8",
+      "runtimeActions": 2,
+      "assertions": 6,
+      "successEvidence": [
+        "tutorial_triggers_bound"
+      ]
+    },
+    {
+      "id": "first_tools",
+      "routeStep": "first_tools",
+      "targetTimeMinutes": "8-15",
+      "runtimeActions": 1,
+      "assertions": 4,
+      "successEvidence": [
+        "recipe_ids_registered",
+        "station_surfaces_bound"
+      ]
+    },
+    {
+      "id": "first_shelter",
+      "routeStep": "first_shelter",
+      "targetTimeMinutes": "15-30",
+      "runtimeActions": 2,
+      "assertions": 7,
+      "successEvidence": [
+        "shelter_score_bound",
+        "first_hour_save_load_ready"
+      ]
+    },
+    {
+      "id": "sleep_and_recover",
+      "routeStep": "sleep_and_recover",
+      "targetTimeMinutes": "30-35",
+      "runtimeActions": 2,
+      "assertions": 5,
+      "successEvidence": [
+        "standard_mode_relaxed",
+        "first_hour_save_load_ready"
+      ]
+    },
+    {
+      "id": "first_exploration_hook",
+      "routeStep": "first_exploration_hook",
+      "targetTimeMinutes": "35-45",
+      "runtimeActions": 1,
+      "assertions": 3,
+      "successEvidence": [
+        "landmark_pools_bound",
+        "holomap_region_persistence_ready"
+      ]
+    },
+    {
+      "id": "first_waystone",
+      "routeStep": "first_waystone",
+      "targetTimeMinutes": "45-60",
+      "runtimeActions": 2,
+      "assertions": 6,
+      "successEvidence": [
+        "waystone_state_persistence_ready",
+        "waystone_state_save_load_pass"
+      ]
+    }
+  ],
+  "saveLoadCheckpoints": [
+    {
+      "id": "after_first_shelter_sleep",
+      "afterScenario": "sleep_and_recover",
+      "persistedFields": 9,
+      "requiredAssertions": 5
+    },
+    {
+      "id": "after_first_waystone_repair",
+      "afterScenario": "first_waystone",
+      "persistedFields": 5,
+      "requiredAssertions": 4
+    }
+  ],
+  "runtimeCoreReport": "evidence/standalone-runtime-core-report.json",
+  "blockedBy": [
+    "real_runtime_first_hour_playtest_missing",
+    "adapter_boot_report_missing",
+    "registry_parity_report_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-first-hour-playtest-report.json",
+  "proofs": [
+    "first_hour_fixture_loaded",
+    "first_hour_route_order_matches_fixture",
+    "scenario_references_resolve_to_mvp_registries",
+    "scenario_runtime_actions_have_assertions",
+    "scenario_success_evidence_resolves",
+    "save_load_checkpoints_cover_first_hour_fields",
+    "holomap_layers_and_hint_types_resolve",
+    "runtime_core_report_passed",
+    "compiled_artifact_contains_first_hour_contracts",
+    "public_alpha_blocked_until_real_first_hour_playtest"
+  ]
+}

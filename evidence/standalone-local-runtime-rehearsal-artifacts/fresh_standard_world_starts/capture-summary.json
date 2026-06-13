@@ -1,0 +1,32 @@
+{
+  "fixtureHash": "527c7207ef08b60b947f9b772d9436d7ce451fe3717c408e2e8e5854d85a06f9",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "defaultMode": "openlands_standard",
+  "standardRules": {
+    "health": true,
+    "hunger": "gentle",
+    "naturalHealingRequiresFood": true,
+    "stamina": false,
+    "hydration": false,
+    "foodSpoilage": false,
+    "temperatureDamage": false,
+    "weatherDamage": false,
+    "deathPack": "recoverable",
+    "hostiles": "moderate",
+    "waystoneTravel": "requires_two_active_waystones"
+  },
+  "hardcoreMetersOff": true,
+  "callableHooks": [
+    "standardRules",
+    "validateStarterSpawn",
+    "scoreShelter",
+    "advanceWaystone",
+    "advanceCrop",
+    "cookpotMealReady",
+    "validateBuilderAction",
+    "firstHourStepIds",
+    "adapterBindingManifest"
+  ],
+  "blockPlaceBreakSample": "branchwood_planks"
+}

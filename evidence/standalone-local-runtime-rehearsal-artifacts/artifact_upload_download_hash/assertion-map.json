@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "all_required_artifact_urls_are_present",
+    "downloaded_sha256_matches_index",
+    "downloaded_size_matches_index",
+    "release_index_state_can_advance_from_warning_only_after_all_checks"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

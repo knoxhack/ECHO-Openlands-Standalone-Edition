@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "all_ten_creature_ids_spawn_or_are_directly_spawnable",
+    "passive_neutral_and_hostile_ai_states_tick_without_error",
+    "drops_resolve_to_known_items",
+    "sound_events_resolve_to_openlands_keys"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

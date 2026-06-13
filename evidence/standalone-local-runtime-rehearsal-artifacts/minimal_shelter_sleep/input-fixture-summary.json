@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "progression/first_hour_route.json",
+    "exists": true,
+    "sha256": "4c80fbd77df12790106f2e9573d6b9b4f3c9aaa658225bc9c43a3e633943bfcb"
+  },
+  {
+    "ref": "systems/playable_runtime_contract.json",
+    "exists": true,
+    "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+  }
+]

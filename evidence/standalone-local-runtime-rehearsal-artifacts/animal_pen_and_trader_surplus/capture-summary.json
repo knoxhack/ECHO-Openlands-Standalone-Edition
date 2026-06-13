@@ -1,0 +1,12 @@
+{
+  "fixtureHash": "e7ffa30b185612c24d602aaa6e652900fe58b37a629da2d7fca28bbac51deefd",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "penIds": [
+    "hare_pen",
+    "goat_pen",
+    "marsh_hen_pen"
+  ],
+  "traderDemandPoolCount": 2,
+  "standardNoUpkeepDeath": true
+}

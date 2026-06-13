@@ -1,0 +1,9 @@
+{
+  "assertions": [
+    "all_public_assets_are_openlands_owned",
+    "remaining_placeholder_count_is_zero_for_public_release",
+    "no_copied_textures_or_silhouettes_are_approved"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

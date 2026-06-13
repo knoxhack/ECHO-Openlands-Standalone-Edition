@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "playtests/mvp_first_hour_acceptance.json",
+    "exists": true,
+    "sha256": "7beeb5422e8a25813820697a0d3bbc30c9c0a6741385d5a5e949ad0c4f8a6372"
+  },
+  {
+    "ref": "systems/playable_runtime_contract.json",
+    "exists": true,
+    "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "assertions": [
+    "all_public_audio_is_openlands_owned_or_licensed",
+    "public_text_uses_openlands_identity_only",
+    "no_minecraft_branding_or_copied_recipe_identity_ships"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

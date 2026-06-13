@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "progression/first_hour_route.json",
+    "exists": true,
+    "sha256": "4c80fbd77df12790106f2e9573d6b9b4f3c9aaa658225bc9c43a3e633943bfcb"
+  },
+  {
+    "ref": "playtests/mvp_first_hour_acceptance.json",
+    "exists": true,
+    "sha256": "7beeb5422e8a25813820697a0d3bbc30c9c0a6741385d5a5e949ad0c4f8a6372"
+  },
+  {
+    "ref": "tutorials/first_hour_prompts.json",
+    "exists": true,
+    "sha256": "418ccfb06075f59216b155179938193b1a8931de04bfa1f432736b4035b740a2"
+  }
+]

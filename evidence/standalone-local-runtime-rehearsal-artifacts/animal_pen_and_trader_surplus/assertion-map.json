@@ -1,0 +1,9 @@
+{
+  "assertions": [
+    "pen_accepts_only_allowed_creatures",
+    "surplus_items_resolve_to_known_items",
+    "trader_demand_does_not_require_hardcore_upkeep"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

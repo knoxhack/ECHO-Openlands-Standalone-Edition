@@ -1,0 +1,11 @@
+{
+  "assertions": [
+    "route_steps_complete_in_order",
+    "discovery_tutorials_fire_once",
+    "all_crafted_recipe_ids_resolve",
+    "first_waystone_updates_holomap",
+    "no_hardcore_meter_blocks_progress"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

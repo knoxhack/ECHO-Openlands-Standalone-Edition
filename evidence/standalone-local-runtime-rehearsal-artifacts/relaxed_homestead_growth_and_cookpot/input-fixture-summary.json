@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "systems/homestead_alpha.json",
+    "exists": true,
+    "sha256": "c75d243c981e6015670224a860aa2c94811a16fe4017e9a4ba5bf4d407abf575"
+  },
+  {
+    "ref": "items/mvp_items.json",
+    "exists": true,
+    "sha256": "3e4b02db481183bab23cf9af10235be1bc97108a42c265787bf894e96bd506ac"
+  },
+  {
+    "ref": "recipes/mvp_recipes.json",
+    "exists": true,
+    "sha256": "a436b1eba2cd3d0b52a7e068bc344c460e337607d14d204dab6d7992944b875e"
+  }
+]

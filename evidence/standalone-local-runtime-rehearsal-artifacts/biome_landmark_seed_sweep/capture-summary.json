@@ -1,0 +1,54 @@
+{
+  "fixtureHash": "9435e3247c2b5f3a73825ec61442e32f1998cba89b85b6e806d75ff16b9497bc",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "biomeIds": [
+    "meadows",
+    "woodlands",
+    "stonehills",
+    "marshlands"
+  ],
+  "landmarkIds": [
+    "ruined_well",
+    "road_marker",
+    "tiny_camp",
+    "watchtower",
+    "old_mine",
+    "broken_bridge",
+    "cellar_entrance",
+    "broken_waystone_site"
+  ],
+  "holomapLayers": [
+    {
+      "id": "region_names",
+      "displayName": "Region Names",
+      "visibleByDefault": true,
+      "source": "waystone_or_region_discovery"
+    },
+    {
+      "id": "old_roads",
+      "displayName": "Old Roads",
+      "visibleByDefault": true,
+      "source": "old_road_block_and_marker_discovery"
+    },
+    {
+      "id": "waystones",
+      "displayName": "Waystones",
+      "visibleByDefault": true,
+      "source": "waystone_state_machine"
+    },
+    {
+      "id": "nearby_hints",
+      "displayName": "Nearby Hints",
+      "visibleByDefault": true,
+      "source": "active_waystone_reveal"
+    },
+    {
+      "id": "player_markers",
+      "displayName": "Player Markers",
+      "visibleByDefault": true,
+      "source": "player_created"
+    }
+  ],
+  "regionCount": 0
+}

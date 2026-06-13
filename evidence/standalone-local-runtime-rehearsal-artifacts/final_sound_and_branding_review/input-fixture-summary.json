@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "sounds/mvp_sound_contract.json",
+    "exists": true,
+    "sha256": "41376d09448d619b8e51d1f6ff06f3ba37486f00984fc9e10b3e54e0bb02559e"
+  },
+  {
+    "ref": "assets/echoopenlandsprotocol/sounds.json",
+    "exists": true,
+    "sha256": "e5197ba6d2bedb334f802f09061c4ac4b8d019b4d914bbdd2278d5c2f8354020"
+  },
+  {
+    "ref": "config/content_policy.json",
+    "exists": true,
+    "sha256": "012ab0133e11874014e94ed78429efa03c1f3af964298d797a60e0ef6c643396"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "biomes/mvp_biomes.json",
+    "exists": true,
+    "sha256": "1b9644851c02c7194cb009102b97b58fefd19d9201fdc8ce59fb06ec3bb2ba22"
+  },
+  {
+    "ref": "structures/mvp_landmarks.json",
+    "exists": true,
+    "sha256": "c23af8e39637ff1b84f7b37064f9d2ef0d90db9df4c55b1a08d4f1e42c8291e1"
+  },
+  {
+    "ref": "holomap/mvp_regions.json",
+    "exists": true,
+    "sha256": "420c4f8e2664ae1f5e558400c9f9baa42a81d64c9a26bf8cbb95b8aaef04aa64"
+  }
+]

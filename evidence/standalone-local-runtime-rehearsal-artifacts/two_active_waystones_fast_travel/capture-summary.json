@@ -1,0 +1,12 @@
+{
+  "fixtureHash": "c5eb26274811b84366f88582e280940cdb30331df48f1e8cd394183569a5c60f",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "activeWaystoneCountRequired": 2,
+  "fastTravelProof": true,
+  "permissionModes": [
+    "owner",
+    "group",
+    "public"
+  ]
+}

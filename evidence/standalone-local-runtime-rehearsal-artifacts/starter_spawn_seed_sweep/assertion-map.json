@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "all_required_starter_resources_found",
+    "visible_exploration_hook_found",
+    "nearest_hostile_distance_is_at_least_16_blocks",
+    "failed_seed_regenerates_or_rejects_starter_area"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

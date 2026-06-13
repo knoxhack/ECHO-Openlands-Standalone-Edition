@@ -1,0 +1,13 @@
+{
+  "fixtureHash": "8cf36fbd4b349db01d1509f18b8e98cd83f1cb4c7cb5d8deca5e8bfb2f2fb2df",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "cropIds": [
+    "grain",
+    "root_crop",
+    "berries"
+  ],
+  "standardCropPauseProof": true,
+  "wateredCompostedProof": true,
+  "cookpotProof": true
+}

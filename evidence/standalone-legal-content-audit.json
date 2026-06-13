@@ -1,0 +1,65 @@
+{
+  "schema": "echo.openlands.edition.legal_content_audit_report.v1",
+  "status": "preflight_passed",
+  "publicReleaseAllowed": false,
+  "generatedAt": "2026-06-13T00:23:06.877Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "legalAuditContract": "data/echoopenlandsprotocol/openlands/systems/legal_content_audit.json",
+  "contentPolicy": "data/echoopenlandsprotocol/openlands/config/content_policy.json",
+  "assetManifest": "assets/echoopenlandsprotocol/asset_manifest.json",
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/config/content_policy.json",
+      "data/echoopenlandsprotocol/openlands/systems/legal_content_audit.json",
+      "data/echoopenlandsprotocol/openlands/systems/final_release_review_acceptance.json",
+      "assets/echoopenlandsprotocol/asset_manifest.json",
+      "assets/echoopenlandsprotocol/lang/en_us.json",
+      "com/knoxhack/echoopenlandsprotocol/contract/OpenlandsRuntimeContracts.class"
+    ]
+  },
+  "scanSummary": {
+    "publicIdentityValues": 1602,
+    "assetPaths": 262,
+    "forbiddenPublicTerms": 22,
+    "blockAssetsChecked": 26,
+    "itemAssetsChecked": 20,
+    "recipesChecked": 10,
+    "descriptorPublicFieldsChecked": 0
+  },
+  "policyResults": {
+    "noForbiddenPublicTerms": true,
+    "canonicalEchoIdsRetained": true,
+    "borrowedAssetPathsDetected": false,
+    "placeholderCoverageComplete": true,
+    "publicReleaseAllowedWithPlaceholders": false,
+    "requiresHumanArtLegalReview": true
+  },
+  "adapterMetadataExceptions": [],
+  "blockedBy": [
+    "final_asset_human_review_missing",
+    "placeholder_assets_block_public_release",
+    "generated_output_human_review_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-legal-content-audit.json",
+  "proofs": [
+    "legal_content_audit_contract_loaded",
+    "content_policy_loaded",
+    "no_forbidden_public_terms_in_public_identity",
+    "canonical_echo_ids_retained",
+    "asset_manifest_placeholder_policy_applied",
+    "mvp_asset_paths_resolve",
+    "recipe_identity_uses_openlands_stations",
+    "generated_artifact_paths_audited",
+    "runtime_descriptor_adapter_metadata_exceptions_recorded",
+    "public_release_blocked_until_final_asset_human_review"
+  ]
+}

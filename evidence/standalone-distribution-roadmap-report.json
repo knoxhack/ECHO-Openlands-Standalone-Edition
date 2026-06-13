@@ -1,0 +1,303 @@
+{
+  "schema": "echo.openlands.edition.distribution_roadmap_report.v1",
+  "status": "preflight_passed",
+  "publicAlphaReady": false,
+  "realDistributionExecutionRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:07.401Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "contracts": {
+    "distribution": "data/echoopenlandsprotocol/openlands/systems/distribution_alpha_gates.json",
+    "distributionApproval": "data/echoopenlandsprotocol/openlands/systems/distribution_approval_acceptance.json",
+    "launchRoadmap": "data/echoopenlandsprotocol/openlands/progression/launch_roadmap.json",
+    "launcherFlow": "data/echoopenlandsprotocol/openlands/systems/launcher_flow_acceptance.json",
+    "crossPlatformParity": "data/echoopenlandsprotocol/openlands/systems/cross_platform_parity.json",
+    "conformance": "data/echoopenlandsprotocol/openlands/conformance/openlands_mvp_registry.json"
+  },
+  "releaseManifest": {
+    "packId": "openlands-standalone-edition",
+    "runtimeTarget": "echo_runtime_standalone",
+    "loader": "echo-standalone-runtime",
+    "moduleArtifactFamily": "standalone",
+    "moduleArtifactPattern": "<module>-<version>-standalone.jar",
+    "requiredPublicAlphaEvidence": [
+      "openlands_contract_validator_pass",
+      "native_standalone_neoforge_artifacts_uploaded_with_sha256",
+      "launcher_install_update_repair_rollback_pass",
+      "first_hour_runtime_playtest_pass",
+      "waystone_state_save_load_pass",
+      "legal_content_audit_pass"
+    ]
+  },
+  "releaseIndex": {
+    "releaseId": "openlands-0.1.0-compiled",
+    "currentAllowedState": "warning",
+    "launcherCurrentIndexStateAllowed": "warning",
+    "approvedRequires": [
+      "all_artifact_targets_uploaded",
+      "all_artifacts_have_sha256",
+      "pack_manifest_indexed_for_each_edition",
+      "launcher_install_update_repair_rollback_pass",
+      "native_standalone_neoforge_parity_pass",
+      "legal_content_audit_pass"
+    ],
+    "artifactSummaries": [
+      {
+        "id": "native",
+        "file": "echoopenlandsprotocol-0.1.0.echo-addon",
+        "kind": "echo-addon",
+        "size": 227696,
+        "sha256": "7249b0b7e6000348027317807dcc263b32b623dc5460bc22aa0b68b6eb665afe",
+        "buildMode": "compiled-runtime",
+        "downloadUrlPresent": false,
+        "requiredForPublicAlpha": true
+      },
+      {
+        "id": "standalone",
+        "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+        "kind": "standalone",
+        "size": 298027,
+        "sha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "buildMode": "compiled-runtime",
+        "downloadUrlPresent": false,
+        "requiredForPublicAlpha": true
+      },
+      {
+        "id": "neoforge",
+        "file": "echoopenlandsprotocol-0.1.0-neoforge.jar",
+        "kind": "neoforge",
+        "size": 298027,
+        "sha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "buildMode": "compiled-runtime",
+        "downloadUrlPresent": false,
+        "requiredForPublicAlpha": true
+      },
+      {
+        "id": "sources",
+        "file": "echoopenlandsprotocol-0.1.0-sources.jar",
+        "kind": "sources",
+        "size": 255724,
+        "sha256": "7a775813d1e82d050a25b509892d2a0ff01209219dbdb6ca712e6c118e0f0058",
+        "buildMode": null,
+        "downloadUrlPresent": false,
+        "requiredForPublicAlpha": true
+      }
+    ],
+    "uploadedArtifactUrlsPresent": false
+  },
+  "editionMatrix": {
+    "id": "standalone",
+    "launcherEntry": {
+      "id": "standalone",
+      "runtimeTarget": "echo_runtime_standalone",
+      "packId": "openlands-standalone-edition",
+      "editionRepo": "ECHO-Openlands-Standalone-Edition",
+      "releaseManifest": "release-manifest.template.json",
+      "releaseIndexEntry": "modpacks/openlands-standalone.json",
+      "artifactFamily": "standalone",
+      "artifactPattern": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "launcherProfileKind": "echo-standalone-runtime",
+      "requiredDescriptors": [
+        "META-INF/echo.mod.json"
+      ]
+    },
+    "parityTarget": {
+      "id": "echo_runtime_standalone",
+      "editionRepo": "ECHO-Openlands-Standalone-Edition",
+      "artifactFamily": "standalone",
+      "artifactPattern": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "requiredDescriptor": "META-INF/echo.mod.json",
+      "adapterResponsibilities": [
+        "load_common_json_registries_without_minecraft_classes",
+        "provide_standalone_block_and_item_runtime",
+        "provide_standalone_worldgen",
+        "persist_inventory_shelter_waystone_holomap_state",
+        "honor_openlands_standard_config"
+      ]
+    },
+    "artifactTarget": {
+      "id": "standalone",
+      "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "editionRepo": "ECHO-Openlands-Standalone-Edition",
+      "requiredForPublicAlpha": true
+    }
+  },
+  "publicAlphaMinimum": {
+    "biomes": 4,
+    "blocks": {
+      "min": 50,
+      "target": 70
+    },
+    "items": {
+      "min": 45,
+      "target": 60
+    },
+    "creatures": 10,
+    "requiredLoops": [
+      "spawn_gather_tool_shelter_sleep",
+      "first_cave_or_old_road",
+      "kiln_and_forge_progression",
+      "first_waystone_repair",
+      "map_reveal",
+      "save_load"
+    ],
+    "coOp": {
+      "targetPlayers": "1-8",
+      "mvpRequirement": "state_schema_ready",
+      "publicAlphaRequirement": "dedicated_server_or_hosted_session_tested"
+    },
+    "conformanceCounts": {
+      "biomes": 4,
+      "blocks": 53,
+      "items": 50,
+      "creatures": 10
+    },
+    "mvpMinimumsMet": {
+      "biomes": true,
+      "blocks": true,
+      "items": true,
+      "creatures": true
+    }
+  },
+  "roadmap": {
+    "defaultRule": "Openlands Standard remains the relaxed default through MVP, Public Alpha, 1.0, and later updates.",
+    "phaseIds": [
+      "mvp",
+      "public_alpha",
+      "one_dot_zero",
+      "post_launch"
+    ],
+    "mvpScope": {
+      "biomes": 4,
+      "blocks": "50-70",
+      "items": "45-60",
+      "players": "1",
+      "coreLoops": [
+        "spawn_gather_tool_shelter_sleep",
+        "first_cave_or_old_road",
+        "first_waystone_repair",
+        "map_reveal",
+        "save_load"
+      ]
+    },
+    "publicAlphaScope": {
+      "biomes": "8-10",
+      "blocks": "150+",
+      "items": "120+",
+      "players": "1-8 co-op",
+      "coreLoops": [
+        "homestead_farming",
+        "animal_pens",
+        "trader_surplus",
+        "ruin_exploration",
+        "creative_mode",
+        "launcher_install_update_repair_rollback"
+      ]
+    },
+    "oneDotZeroLoops": [
+      "full_waystone_network",
+      "old_road_restoration",
+      "settlements",
+      "traders",
+      "deep_caves",
+      "creative_tools",
+      "server_multiplayer"
+    ],
+    "nonNegotiableInvariants": [
+      "Echo data IDs remain source of truth.",
+      "Hardlands remains optional.",
+      "No Minecraft branding, textures, sounds, copied mob silhouettes, or copied recipe identity.",
+      "Native, Standalone, and NeoForge releases cannot be approved unless parity differences are documented.",
+      "Launcher repair and rollback must work before public release."
+    ]
+  },
+  "launcherFlows": [
+    {
+      "id": "install",
+      "appliesTo": [
+        "echo_native",
+        "echo_runtime_standalone",
+        "neoforge"
+      ],
+      "mustVerify": [
+        "manifest_download",
+        "artifact_download",
+        "sha256_match",
+        "runtime_start",
+        "openlands_standard_selected"
+      ],
+      "evidenceAttachment": "launcher-install-report.json"
+    },
+    {
+      "id": "update",
+      "appliesTo": [
+        "echo_native",
+        "echo_runtime_standalone",
+        "neoforge"
+      ],
+      "mustVerify": [
+        "old_manifest_detected",
+        "changed_artifact_downloaded",
+        "unchanged_artifacts_reused",
+        "save_preserved",
+        "config_preserved"
+      ],
+      "evidenceAttachment": "launcher-update-report.json"
+    },
+    {
+      "id": "repair",
+      "appliesTo": [
+        "echo_native",
+        "echo_runtime_standalone",
+        "neoforge"
+      ],
+      "mustVerify": [
+        "missing_artifact_detected",
+        "corrupt_artifact_detected",
+        "sha256_restored",
+        "pack_launches_after_repair"
+      ],
+      "evidenceAttachment": "launcher-repair-report.json"
+    },
+    {
+      "id": "rollback",
+      "appliesTo": [
+        "echo_native",
+        "echo_runtime_standalone",
+        "neoforge"
+      ],
+      "mustVerify": [
+        "previous_manifest_available",
+        "previous_artifacts_available",
+        "worlds_preserved",
+        "schema_warning_if_needed"
+      ],
+      "evidenceAttachment": "launcher-rollback-report.json"
+    }
+  ],
+  "blockedBy": [
+    "release_index_download_urls_missing",
+    "real_launcher_install_update_repair_rollback_execution_missing",
+    "native_standalone_neoforge_runtime_parity_execution_missing",
+    "public_alpha_coop_session_test_missing",
+    "public_alpha_release_index_approval_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-distribution-roadmap-report.json",
+  "proofs": [
+    "distribution_contract_loaded",
+    "distribution_approval_contract_loaded",
+    "launch_roadmap_loaded",
+    "launcher_flow_contract_loaded",
+    "cross_platform_parity_contract_loaded",
+    "edition_manifest_matches_distribution_matrix",
+    "public_alpha_minimums_match_mvp_floor",
+    "compiled_release_artifacts_have_sha256_and_size",
+    "release_index_stays_warning_until_uploads",
+    "roadmap_relaxed_default_and_invariants_declared",
+    "public_alpha_blocked_until_real_distribution_execution"
+  ]
+}

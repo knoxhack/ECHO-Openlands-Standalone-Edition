@@ -1,0 +1,229 @@
+{
+  "schema": "echo.openlands.edition.launcher_flow_report.v1",
+  "status": "preflight_passed",
+  "publicAlphaReady": false,
+  "generatedAt": "2026-06-13T00:23:07.047Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "releaseManifest": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echo-release.json",
+  "releaseId": "openlands-0.1.0-compiled",
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "size": 298027,
+    "sha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+    "buildMode": "compiled-runtime",
+    "downloadUrlPresent": false,
+    "packageEntriesChecked": [
+      "META-INF/echo.mod.json"
+    ],
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/systems/launcher_flow_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+      "data/echoopenlandsprotocol/openlands/systems/playable_runtime_contract.json",
+      "data/echoopenlandsprotocol/openlands/systems/launcher_execution_acceptance.json",
+      "com/knoxhack/echoopenlandsprotocol/contract/OpenlandsRuntimeContracts.class"
+    ],
+    "nestedRuntimeEntry": null
+  },
+  "launcherFlowContract": "data/echoopenlandsprotocol/openlands/systems/launcher_flow_acceptance.json",
+  "distributionContract": "data/echoopenlandsprotocol/openlands/systems/distribution_alpha_gates.json",
+  "releaseIndexStateAllowed": "warning",
+  "requiredPublicAlphaEvidence": [
+    "openlands_contract_validator_pass",
+    "native_standalone_neoforge_artifacts_uploaded_with_sha256",
+    "launcher_install_update_repair_rollback_pass",
+    "first_hour_runtime_playtest_pass",
+    "waystone_state_save_load_pass",
+    "legal_content_audit_pass"
+  ],
+  "flowResults": [
+    {
+      "id": "install",
+      "displayName": "Fresh Install",
+      "status": "preflight_mapped",
+      "preconditions": [
+        "selected_edition_present_in_launcher_channel",
+        "module_requirement_graph_resolves",
+        "artifact_index_metadata_present_before_public_alpha",
+        "selected_runtime_available"
+      ],
+      "mustVerify": [
+        "manifest_download",
+        "artifact_download",
+        "sha256_match",
+        "runtime_start",
+        "openlands_standard_selected"
+      ],
+      "additionalAssertions": [
+        "descriptor_id_is_echoopenlandsprotocol",
+        "descriptor_version_is_0.1.0",
+        "descriptor_runtime_target_matches_edition",
+        "required_descriptors_exist",
+        "adapter_ready_signal_reported"
+      ],
+      "worldStatePolicy": {
+        "requiresExistingWorld": false,
+        "mustCreateWorld": true,
+        "mustPreserveWorlds": false
+      },
+      "evidenceAttachment": "launcher-install-report.json",
+      "realLauncherExecutionRequiredBeforePublicAlpha": true
+    },
+    {
+      "id": "update",
+      "displayName": "Artifact Update",
+      "status": "preflight_mapped",
+      "preconditions": [
+        "previous_manifest_installed",
+        "new_manifest_available",
+        "changed_artifact_has_new_sha256",
+        "unchanged_artifacts_have_same_sha256"
+      ],
+      "mustVerify": [
+        "old_manifest_detected",
+        "changed_artifact_downloaded",
+        "unchanged_artifacts_reused",
+        "save_preserved",
+        "config_preserved"
+      ],
+      "additionalAssertions": [
+        "openlands_standard_remains_default",
+        "runtime_evidence_contract_path_unchanged_or_migrated",
+        "waystone_schema_readable_after_update",
+        "holomap_schema_readable_after_update"
+      ],
+      "worldStatePolicy": {
+        "requiresExistingWorld": true,
+        "mustCreateWorld": false,
+        "mustPreserveWorlds": true
+      },
+      "evidenceAttachment": "launcher-update-report.json",
+      "realLauncherExecutionRequiredBeforePublicAlpha": true
+    },
+    {
+      "id": "repair",
+      "displayName": "Repair Corrupt Install",
+      "status": "preflight_mapped",
+      "preconditions": [
+        "installed_manifest_available",
+        "one_required_artifact_missing_or_corrupt",
+        "release_index_has_repair_metadata"
+      ],
+      "mustVerify": [
+        "missing_artifact_detected",
+        "corrupt_artifact_detected",
+        "sha256_restored",
+        "pack_launches_after_repair"
+      ],
+      "additionalAssertions": [
+        "descriptor_revalidated_after_repair",
+        "no_world_files_deleted",
+        "openlands_standard_config_preserved",
+        "adapter_ready_signal_reported_after_repair"
+      ],
+      "worldStatePolicy": {
+        "requiresExistingWorld": true,
+        "mustCreateWorld": false,
+        "mustPreserveWorlds": true
+      },
+      "evidenceAttachment": "launcher-repair-report.json",
+      "realLauncherExecutionRequiredBeforePublicAlpha": true
+    },
+    {
+      "id": "rollback",
+      "displayName": "Rollback To Previous Manifest",
+      "status": "preflight_mapped",
+      "preconditions": [
+        "previous_manifest_available",
+        "previous_artifacts_available",
+        "world_schema_compatibility_checked",
+        "user_confirmed_schema_warning_when_needed"
+      ],
+      "mustVerify": [
+        "previous_manifest_available",
+        "previous_artifacts_available",
+        "worlds_preserved",
+        "schema_warning_if_needed"
+      ],
+      "additionalAssertions": [
+        "rollback_does_not_delete_worlds",
+        "rollback_does_not_delete_config",
+        "waystone_schema_warning_visible_if_newer_world_detected",
+        "launcher_can_return_to_current_manifest_after_test"
+      ],
+      "worldStatePolicy": {
+        "requiresExistingWorld": true,
+        "mustCreateWorld": false,
+        "mustPreserveWorlds": true
+      },
+      "evidenceAttachment": "launcher-rollback-report.json",
+      "realLauncherExecutionRequiredBeforePublicAlpha": true
+    }
+  ],
+  "statePreservation": {
+    "configFiles": [
+      "openlands_standard.json",
+      "selected_mode",
+      "user_keybinds",
+      "launcher_profile_selection"
+    ],
+    "firstHourSaveFields": [
+      "inventory",
+      "hotbar",
+      "placedBlocks",
+      "chestContents",
+      "bedrollSpawn",
+      "campfireLitState",
+      "shelterScore",
+      "waystoneState",
+      "holomapRegionDiscovery"
+    ],
+    "waystoneFields": [
+      "waystoneId",
+      "regionId",
+      "customName",
+      "state",
+      "ownerPlayerId",
+      "ownerGroupId",
+      "isPublicTravel",
+      "canPublicRename",
+      "repairContributorIds",
+      "linkedRouteIds",
+      "lastActivatedAt"
+    ],
+    "holomapFields": [
+      "regionId",
+      "displayName",
+      "seedSalt",
+      "biomeType",
+      "discoveredAt",
+      "nearbyHints",
+      "restoredWaystones",
+      "playerMarkers",
+      "oldRoadSegments"
+    ]
+  },
+  "blockedBy": [
+    "release_artifact_download_url_missing",
+    "real_launcher_install_update_repair_rollback_execution_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-launcher-flow-report.json",
+  "proofs": [
+    "launcher_flow_contract_loaded",
+    "edition_matrix_matches_manifest",
+    "release_manifest_template_loaded",
+    "compiled_runtime_artifact_present",
+    "artifact_sha256_matches_release_manifest",
+    "artifact_size_matches_release_manifest",
+    "required_descriptors_present",
+    "install_update_repair_rollback_flows_mapped",
+    "state_preservation_fields_mapped",
+    "public_alpha_blocked_until_real_launcher_execution"
+  ]
+}

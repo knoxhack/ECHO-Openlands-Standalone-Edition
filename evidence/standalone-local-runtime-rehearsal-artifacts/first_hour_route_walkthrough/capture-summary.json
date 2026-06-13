@@ -1,0 +1,19 @@
+{
+  "fixtureHash": "5509a7d1d2dbd51f69d023a847c800ed66b1a35c0bc0ace17d1468b7644f8e3c",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "firstHourSteps": [
+    "safe_spawn",
+    "first_gathering",
+    "first_tools",
+    "first_shelter",
+    "sleep_and_recover",
+    "first_exploration_hook",
+    "first_waystone"
+  ],
+  "expectedStepCount": 7,
+  "routeMatchesFixture": true,
+  "blockCount": 26,
+  "itemCount": 20,
+  "recipeCount": 10
+}

@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "unwatered_standard_crop_pauses_without_death",
+    "watered_composted_crop_advances",
+    "cookpot_requires_ingredients_and_time",
+    "crop_and_cookpot_state_roundtrip"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

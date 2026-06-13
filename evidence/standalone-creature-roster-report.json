@@ -1,0 +1,356 @@
+{
+  "schema": "echo.openlands.edition.creature_roster_report.v1",
+  "status": "preflight_passed",
+  "realRuntimeCreatureExecutionRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:06.084Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "contracts": {
+    "creatures": "data/echoopenlandsprotocol/openlands/creatures/mvp_creatures.json",
+    "loot": "data/echoopenlandsprotocol/openlands/loot/mvp_loot.json",
+    "biomes": "data/echoopenlandsprotocol/openlands/biomes/mvp_biomes.json",
+    "items": "data/echoopenlandsprotocol/openlands/items/mvp_items.json",
+    "tags": "data/echoopenlandsprotocol/openlands/tags/mvp_tags.json",
+    "conformance": "data/echoopenlandsprotocol/openlands/conformance/openlands_mvp_registry.json",
+    "runtimePlan": "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+    "playtest": "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+    "sounds": "assets/echoopenlandsprotocol/sounds.json"
+  },
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/creatures/mvp_creatures.json",
+      "data/echoopenlandsprotocol/openlands/loot/mvp_loot.json",
+      "data/echoopenlandsprotocol/openlands/biomes/mvp_biomes.json",
+      "data/echoopenlandsprotocol/openlands/items/mvp_items.json",
+      "data/echoopenlandsprotocol/openlands/tags/mvp_tags.json",
+      "data/echoopenlandsprotocol/openlands/conformance/openlands_mvp_registry.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+      "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+      "assets/echoopenlandsprotocol/sounds.json"
+    ]
+  },
+  "globalRules": {
+    "defaultHostility": "moderate",
+    "avoidHardcorePressure": true,
+    "noCopiedSilhouettes": true,
+    "despawnPolicy": "runtime_default_safe",
+    "soundNamespace": "echoopenlandsprotocol"
+  },
+  "counts": {
+    "creatures": 10,
+    "categories": 7,
+    "creatureDropTables": 10,
+    "creatureSoundEvents": 34,
+    "passiveOrNeutralCreatures": 6,
+    "hostileCreatures": 4
+  },
+  "creatureIds": [
+    "hare",
+    "deer",
+    "boar",
+    "goat",
+    "marsh_hen",
+    "fish",
+    "greyling",
+    "bristleback",
+    "hollow_stalker",
+    "mire_leech"
+  ],
+  "categoryCounts": {
+    "passive_small": 2,
+    "passive_large": 2,
+    "neutral": 1,
+    "aquatic_passive": 1,
+    "hostile_small": 2,
+    "hostile_large": 1,
+    "hostile_rare": 1
+  },
+  "creatureSummaries": [
+    {
+      "id": "hare",
+      "category": "passive_small",
+      "biomes": [
+        "meadows",
+        "woodlands"
+      ],
+      "spawnTime": "day",
+      "group": "2-4",
+      "maxGroupSize": 4,
+      "minimumDistanceFromWorldSpawn": 0,
+      "aiCount": 4,
+      "soundCount": 3,
+      "dropCount": 2,
+      "biomeSpawnEntries": [
+        {
+          "biome": "meadows",
+          "weight": 12
+        },
+        {
+          "biome": "woodlands",
+          "weight": 5
+        }
+      ],
+      "starterFriendly": true
+    },
+    {
+      "id": "deer",
+      "category": "passive_large",
+      "biomes": [
+        "meadows",
+        "woodlands"
+      ],
+      "spawnTime": "day",
+      "group": "1-3",
+      "maxGroupSize": 3,
+      "minimumDistanceFromWorldSpawn": 0,
+      "aiCount": 4,
+      "soundCount": 3,
+      "dropCount": 3,
+      "biomeSpawnEntries": [
+        {
+          "biome": "meadows",
+          "weight": 5
+        },
+        {
+          "biome": "woodlands",
+          "weight": 8
+        }
+      ],
+      "starterFriendly": true
+    },
+    {
+      "id": "boar",
+      "category": "neutral",
+      "biomes": [
+        "meadows",
+        "woodlands"
+      ],
+      "spawnTime": "day_or_dusk",
+      "group": "1-2",
+      "maxGroupSize": 2,
+      "minimumDistanceFromWorldSpawn": 48,
+      "aiCount": 4,
+      "soundCount": 4,
+      "dropCount": 3,
+      "biomeSpawnEntries": [
+        {
+          "biome": "meadows",
+          "weight": 2
+        },
+        {
+          "biome": "woodlands",
+          "weight": 4
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "goat",
+      "category": "passive_large",
+      "biomes": [
+        "stonehills"
+      ],
+      "spawnTime": "day",
+      "group": "2-4",
+      "maxGroupSize": 4,
+      "minimumDistanceFromWorldSpawn": 0,
+      "aiCount": 4,
+      "soundCount": 3,
+      "dropCount": 2,
+      "biomeSpawnEntries": [
+        {
+          "biome": "stonehills",
+          "weight": 8
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "marsh_hen",
+      "category": "passive_small",
+      "biomes": [
+        "marshlands"
+      ],
+      "spawnTime": "day",
+      "group": "2-5",
+      "maxGroupSize": 5,
+      "minimumDistanceFromWorldSpawn": 0,
+      "aiCount": 4,
+      "soundCount": 3,
+      "dropCount": 2,
+      "biomeSpawnEntries": [
+        {
+          "biome": "marshlands",
+          "weight": 10
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "fish",
+      "category": "aquatic_passive",
+      "biomes": [
+        "meadows",
+        "marshlands"
+      ],
+      "spawnTime": "any",
+      "group": "3-8",
+      "maxGroupSize": 8,
+      "minimumDistanceFromWorldSpawn": 0,
+      "aiCount": 3,
+      "soundCount": 3,
+      "dropCount": 1,
+      "biomeSpawnEntries": [
+        {
+          "biome": "marshlands",
+          "weight": 10
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "greyling",
+      "category": "hostile_small",
+      "biomes": [
+        "meadows",
+        "woodlands",
+        "stonehills",
+        "marshlands"
+      ],
+      "spawnTime": "night",
+      "group": "1-3",
+      "maxGroupSize": 3,
+      "minimumDistanceFromWorldSpawn": 96,
+      "aiCount": 4,
+      "soundCount": 4,
+      "dropCount": 2,
+      "biomeSpawnEntries": [
+        {
+          "biome": "meadows",
+          "weight": 1
+        },
+        {
+          "biome": "stonehills",
+          "weight": 2
+        },
+        {
+          "biome": "marshlands",
+          "weight": 1
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "bristleback",
+      "category": "hostile_large",
+      "biomes": [
+        "stonehills",
+        "woodlands"
+      ],
+      "spawnTime": "dusk_or_night",
+      "group": "1",
+      "maxGroupSize": 1,
+      "minimumDistanceFromWorldSpawn": 160,
+      "aiCount": 4,
+      "soundCount": 4,
+      "dropCount": 3,
+      "biomeSpawnEntries": [
+        {
+          "biome": "stonehills",
+          "weight": 2
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "hollow_stalker",
+      "category": "hostile_rare",
+      "biomes": [
+        "woodlands",
+        "stonehills"
+      ],
+      "spawnTime": "night",
+      "group": "1",
+      "maxGroupSize": 1,
+      "minimumDistanceFromWorldSpawn": 192,
+      "aiCount": 4,
+      "soundCount": 4,
+      "dropCount": 2,
+      "biomeSpawnEntries": [
+        {
+          "biome": "woodlands",
+          "weight": 1
+        }
+      ],
+      "starterFriendly": false
+    },
+    {
+      "id": "mire_leech",
+      "category": "hostile_small",
+      "biomes": [
+        "marshlands"
+      ],
+      "spawnTime": "night_or_fog",
+      "group": "1-3",
+      "maxGroupSize": 3,
+      "minimumDistanceFromWorldSpawn": 96,
+      "aiCount": 4,
+      "soundCount": 3,
+      "dropCount": 1,
+      "biomeSpawnEntries": [
+        {
+          "biome": "marshlands",
+          "weight": 3
+        }
+      ],
+      "starterFriendly": false
+    }
+  ],
+  "starterSafety": {
+    "safeSpawnAllowedCreatures": [
+      "hare",
+      "deer"
+    ],
+    "hostilesMinimumDistanceBlocks": 96,
+    "boarMinimumDistanceBlocks": 48,
+    "avoidHardcorePressure": true
+  },
+  "worldgenLoadStep": {
+    "id": "bind_biomes_structures_creatures_and_spawn",
+    "successSignal": "openlands_worldgen_bound",
+    "requiredEvidence": [
+      "biome_palettes_bound",
+      "spawn_tables_bound",
+      "landmark_pools_bound",
+      "starter_spawn_guarantees_bound"
+    ]
+  },
+  "blockedBy": [
+    "real_runtime_creature_spawn_execution_missing",
+    "creature_ai_behavior_smoke_test_missing",
+    "creature_drop_runtime_test_missing",
+    "creature_sound_runtime_test_missing",
+    "creature_spawn_parity_test_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-creature-roster-report.json",
+  "proofs": [
+    "creature_contract_loaded",
+    "creature_ids_match_conformance",
+    "creature_spawn_rules_resolve",
+    "creature_drop_tables_resolve",
+    "creature_sound_keys_resolve",
+    "creature_ai_hints_declared",
+    "starter_creature_safety_declared",
+    "worldgen_load_step_binds_creatures",
+    "compiled_artifact_contains_creature_contracts",
+    "public_alpha_blocked_until_real_creature_runtime_execution"
+  ]
+}

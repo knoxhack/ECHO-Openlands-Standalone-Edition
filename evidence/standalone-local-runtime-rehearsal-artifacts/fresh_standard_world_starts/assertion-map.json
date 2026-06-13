@@ -1,0 +1,12 @@
+{
+  "assertions": [
+    "runtime_reports_openlands_runtime_ready",
+    "hunger_mode_is_gentle",
+    "stamina_hydration_spoilage_temperature_meters_absent",
+    "hotbar_and_inventory_are_available",
+    "block_place_break_roundtrip_succeeds",
+    "reloaded_world_remains_openlands_standard"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

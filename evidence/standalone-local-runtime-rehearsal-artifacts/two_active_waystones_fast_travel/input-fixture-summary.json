@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "waystones/waystone_contract.json",
+    "exists": true,
+    "sha256": "087afe74b911a4325d4b68a7aea527c2417ddad46efc85e89122fa60287dc43d"
+  },
+  {
+    "ref": "systems/coop_and_smp.json",
+    "exists": true,
+    "sha256": "0b7c0c5c34e2e5fa169eaa0942d788fb76d95300eea1998cc9bccd7fa0b34cd3"
+  }
+]

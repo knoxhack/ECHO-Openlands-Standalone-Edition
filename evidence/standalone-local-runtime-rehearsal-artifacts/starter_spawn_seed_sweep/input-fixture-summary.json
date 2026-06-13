@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "biomes/mvp_biomes.json",
+    "exists": true,
+    "sha256": "1b9644851c02c7194cb009102b97b58fefd19d9201fdc8ce59fb06ec3bb2ba22"
+  },
+  {
+    "ref": "structures/mvp_landmarks.json",
+    "exists": true,
+    "sha256": "c23af8e39637ff1b84f7b37064f9d2ef0d90db9df4c55b1a08d4f1e42c8291e1"
+  },
+  {
+    "ref": "systems/playable_runtime_contract.json",
+    "exists": true,
+    "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+  }
+]

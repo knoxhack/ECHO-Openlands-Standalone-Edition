@@ -1,0 +1,28 @@
+{
+  "fixtureHash": "7e178ab4e1ead630d682fe348a9907f51b68b2f8f37ea490da4d70d98d8c7519",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "saveLoadFields": [
+    "inventory",
+    "hotbar",
+    "placedBlocks",
+    "chestContents",
+    "bedrollSpawn",
+    "campfireLitState",
+    "shelterScore",
+    "waystoneState",
+    "holomapRegionDiscovery"
+  ],
+  "saveLoadCheckpointCount": 2,
+  "requiredRoundTripFields": [
+    "inventory",
+    "hotbar",
+    "placedBlocks",
+    "chestContents",
+    "bedrollSpawn",
+    "campfireLitState",
+    "shelterScore",
+    "waystoneState",
+    "holomapRegionDiscovery"
+  ]
+}

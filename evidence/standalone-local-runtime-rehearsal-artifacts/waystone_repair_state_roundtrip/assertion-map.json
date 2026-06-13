@@ -1,0 +1,11 @@
+{
+  "assertions": [
+    "state_timeline_matches_contract_order",
+    "repair_inputs_are_consumed_once",
+    "contributors_are_recorded",
+    "state_persists_after_reload",
+    "holomap_reveal_persists_after_reload"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

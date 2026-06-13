@@ -1,0 +1,9 @@
+{
+  "fixtureHash": "c2328ff13fe60296bc862040c66a73af2be670685aea649ce615ba18adf56458",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "assetManifestSchema": "echo.openlands.assets.v1",
+  "placeholderPolicyPresent": true,
+  "legalAuditContract": "echo.openlands.systems.legal_content_audit.v1",
+  "humanReviewStillRequired": true
+}

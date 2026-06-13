@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "shelter_score_is_at_least_55",
+    "sleep_milestone_allowed",
+    "shelter_does_not_require_perfect_enclosure",
+    "bedroll_spawn_is_set"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

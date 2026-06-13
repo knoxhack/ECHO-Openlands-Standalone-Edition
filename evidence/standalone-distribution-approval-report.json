@@ -1,0 +1,289 @@
+{
+  "schema": "echo.openlands.edition.distribution_approval_report.v1",
+  "status": "blocked",
+  "generatedAt": "2026-06-13T00:23:07.645Z",
+  "generatedBy": "generate-openlands-distribution-approval-report.mjs",
+  "edition": "standalone",
+  "packId": "openlands-standalone-edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "releaseId": "openlands-0.1.0-compiled",
+  "releaseIndex": {
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echo-release.json",
+    "hash": "f206b39537adb940263075bb886e18b54e3b988af76e946019245d68ad9f7caf",
+    "artifactDownloadUrlsPresent": false,
+    "approvedState": false
+  },
+  "approvalRun": {
+    "status": "not_executed",
+    "approver": null,
+    "approvalDate": null,
+    "reason": "Release Index publication, co-op session, dependency gates, and approval signature are missing."
+  },
+  "approvalResults": [
+    {
+      "id": "artifact_publication",
+      "displayName": "Artifact Publication",
+      "gateIds": [
+        "release_index_artifact_urls_published",
+        "release_index_download_hash_verified"
+      ],
+      "status": "blocked",
+      "checklist": [
+        {
+          "id": "all_required_artifacts_have_download_urls",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "downloaded_artifacts_match_sha256",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "downloaded_artifacts_match_size",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "sources_artifact_is_published",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "release_index_state_is_ready_for_approval",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        }
+      ],
+      "evidenceRefs": [
+        "systems/distribution_alpha_gates.json",
+        "dist/echo-module-release/echo-release.json"
+      ],
+      "savedArtifacts": [],
+      "requiredSavedArtifacts": [
+        "artifact-publication-report.json",
+        "download-verification-report.json",
+        "release-index-diff.json"
+      ],
+      "blockedBy": [
+        "distribution_approval_missing"
+      ]
+    },
+    {
+      "id": "edition_manifest_indexing",
+      "displayName": "Edition Manifest Indexing",
+      "gateIds": [
+        "edition_pack_manifests_indexed"
+      ],
+      "status": "blocked",
+      "checklist": [
+        {
+          "id": "native_manifest_is_indexed",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "neoforge_manifest_is_indexed",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "standalone_manifest_is_indexed",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "module_requirements_resolve_for_each_manifest",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "launcher_channel_lists_all_three_editions",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        }
+      ],
+      "evidenceRefs": [
+        "systems/launcher_flow_acceptance.json",
+        "ECHO-Openlands-Native-Edition/release-manifest.template.json",
+        "ECHO-Openlands-NeoForge-Edition/release-manifest.template.json",
+        "ECHO-Openlands-Standalone-Edition/release-manifest.template.json"
+      ],
+      "savedArtifacts": [],
+      "requiredSavedArtifacts": [
+        "edition-manifest-index-report.json",
+        "module-requirement-resolution.json",
+        "launcher-channel-listing.json"
+      ],
+      "blockedBy": [
+        "distribution_approval_missing"
+      ]
+    },
+    {
+      "id": "runtime_launcher_final_review_dependency",
+      "displayName": "Runtime Launcher And Final Review Dependency",
+      "gateIds": [
+        "public_alpha_distribution_approved"
+      ],
+      "status": "blocked",
+      "checklist": [
+        {
+          "id": "runtime_execution_reports_pass_for_all_editions",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "launcher_execution_reports_pass_for_all_editions",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "final_release_review_reports_pass_for_all_editions",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "release_readiness_report_has_no_blockers",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "approved_release_index_state_is_recorded",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        }
+      ],
+      "evidenceRefs": [
+        "systems/runtime_execution_acceptance.json",
+        "systems/launcher_execution_acceptance.json",
+        "systems/final_release_review_acceptance.json"
+      ],
+      "savedArtifacts": [],
+      "requiredSavedArtifacts": [
+        "dependency-gate-summary.json",
+        "release-readiness-hash.txt",
+        "approval-input-report-index.json"
+      ],
+      "blockedBy": [
+        "distribution_approval_missing"
+      ]
+    },
+    {
+      "id": "coop_public_alpha_session",
+      "displayName": "Co-op Public Alpha Session",
+      "gateIds": [
+        "public_alpha_coop_session_tested"
+      ],
+      "status": "blocked",
+      "checklist": [
+        {
+          "id": "one_to_eight_player_session_starts",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "shared_waystone_state_stays_consistent",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "storage_permissions_are_enforced",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "disconnect_reconnect_preserves_player_state",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "session_logs_have_no_authority_desync",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        }
+      ],
+      "evidenceRefs": [
+        "systems/coop_and_smp.json",
+        "playtests/mvp_first_hour_acceptance.json",
+        "waystones/waystone_contract.json"
+      ],
+      "savedArtifacts": [],
+      "requiredSavedArtifacts": [
+        "coop-session-report.json",
+        "coop-waystone-state-log.json",
+        "coop-permission-transaction-log.json"
+      ],
+      "blockedBy": [
+        "distribution_approval_missing"
+      ]
+    },
+    {
+      "id": "public_alpha_approval",
+      "displayName": "Public Alpha Approval",
+      "gateIds": [
+        "public_alpha_distribution_approved"
+      ],
+      "status": "blocked",
+      "checklist": [
+        {
+          "id": "mvp_scope_matches_launch_roadmap",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "hardlands_remains_optional",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "all_public_alpha_evidence_ids_are_present",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "approver_signature_is_recorded",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        },
+        {
+          "id": "rollback_plan_is_attached",
+          "status": "blocked",
+          "reason": "real distribution approval has not run yet"
+        }
+      ],
+      "evidenceRefs": [
+        "progression/launch_roadmap.json",
+        "progression/production_phase_matrix.json",
+        "dist/echo-module-release/echoopenlandsprotocol/openlands-release-readiness-report.json"
+      ],
+      "savedArtifacts": [],
+      "requiredSavedArtifacts": [
+        "public-alpha-approval.md",
+        "rollback-plan-snapshot.md",
+        "approved-readiness-report.json",
+        "approved-readiness-report-by-phase.md"
+      ],
+      "blockedBy": [
+        "distribution_approval_missing"
+      ]
+    }
+  ],
+  "clearedDistributionGates": [],
+  "remainingDistributionGates": [
+    "edition_pack_manifests_indexed",
+    "public_alpha_coop_session_tested",
+    "public_alpha_distribution_approved",
+    "release_index_artifact_urls_published",
+    "release_index_download_hash_verified"
+  ],
+  "publicAlphaReady": false,
+  "blockedBy": [
+    "release_index_download_urls_missing",
+    "public_alpha_release_index_approval_missing",
+    "public_alpha_coop_session_test_missing",
+    "runtime_launcher_or_final_review_gate_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-distribution-approval-report.json"
+}

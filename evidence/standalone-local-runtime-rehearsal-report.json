@@ -1,0 +1,1506 @@
+{
+  "schema": "echo.openlands.edition.local_runtime_rehearsal_report.v1",
+  "status": "preflight_passed",
+  "publicAlphaReady": false,
+  "clearsRuntimeGates": false,
+  "rehearsalOnly": true,
+  "generatedAt": "2026-06-13T00:23:07.152Z",
+  "dryRun": false,
+  "edition": "standalone",
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "runtimeExecutionContract": "data/echoopenlandsprotocol/openlands/systems/runtime_execution_acceptance.json",
+  "playableRuntimeContract": "data/echoopenlandsprotocol/openlands/systems/playable_runtime_contract.json",
+  "runtimeCoreReport": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-runtime-core-report.json",
+  "localLauncherRehearsalReport": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-local-launcher-rehearsal-report.json",
+  "moduleArtifact": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+  "moduleArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+  "moduleArtifactSize": 298027,
+  "rehearsalRoot": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence",
+  "savedArtifactRoot": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-local-runtime-rehearsal-artifacts",
+  "scenarioResults": [
+    {
+      "id": "fresh_standard_world_starts",
+      "suiteId": "first_hour_world_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.114Z",
+      "finishedAt": "2026-06-13T00:23:07.114Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "config/game_modes.json",
+        "systems/playable_runtime_contract.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "config/game_modes.json",
+          "exists": true,
+          "sha256": "18c69820c057d5b0954bc323d1c153618db84425237039aa0d1c98c654cc11c5"
+        },
+        {
+          "ref": "systems/playable_runtime_contract.json",
+          "exists": true,
+          "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+        }
+      ],
+      "plannedActions": [
+        "create_new_openlands_standard_world",
+        "wait_for_first_interactive_frame",
+        "inspect_player_hud",
+        "place_and_break_branchwood_planks",
+        "exit_to_menu_and_reload"
+      ],
+      "rehearsalActions": [
+        "mapped_create_new_openlands_standard_world",
+        "mapped_wait_for_first_interactive_frame",
+        "mapped_inspect_player_hud",
+        "mapped_place_and_break_branchwood_planks",
+        "mapped_exit_to_menu_and_reload"
+      ],
+      "assertions": [
+        {
+          "id": "runtime_reports_openlands_runtime_ready",
+          "status": "passed"
+        },
+        {
+          "id": "hunger_mode_is_gentle",
+          "status": "passed"
+        },
+        {
+          "id": "stamina_hydration_spoilage_temperature_meters_absent",
+          "status": "passed"
+        },
+        {
+          "id": "hotbar_and_inventory_are_available",
+          "status": "passed"
+        },
+        {
+          "id": "block_place_break_roundtrip_succeeds",
+          "status": "passed"
+        },
+        {
+          "id": "reloaded_world_remains_openlands_standard",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "527c7207ef08b60b947f9b772d9436d7ce451fe3717c408e2e8e5854d85a06f9",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "defaultMode": "openlands_standard",
+        "standardRules": {
+          "health": true,
+          "hunger": "gentle",
+          "naturalHealingRequiresFood": true,
+          "stamina": false,
+          "hydration": false,
+          "foodSpoilage": false,
+          "temperatureDamage": false,
+          "weatherDamage": false,
+          "deathPack": "recoverable",
+          "hostiles": "moderate",
+          "waystoneTravel": "requires_two_active_waystones"
+        },
+        "hardcoreMetersOff": true,
+        "callableHooks": [
+          "standardRules",
+          "validateStarterSpawn",
+          "scoreShelter",
+          "advanceWaystone",
+          "advanceCrop",
+          "cookpotMealReady",
+          "validateBuilderAction",
+          "firstHourStepIds",
+          "adapterBindingManifest"
+        ],
+        "blockPlaceBreakSample": "branchwood_planks"
+      },
+      "savedArtifacts": [
+        "fresh_standard_world_starts/input-fixture-summary.json",
+        "fresh_standard_world_starts/assertion-map.json",
+        "fresh_standard_world_starts/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "starter_spawn_seed_sweep",
+      "suiteId": "first_hour_world_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.118Z",
+      "finishedAt": "2026-06-13T00:23:07.118Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "biomes/mvp_biomes.json",
+        "structures/mvp_landmarks.json",
+        "systems/playable_runtime_contract.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "biomes/mvp_biomes.json",
+          "exists": true,
+          "sha256": "1b9644851c02c7194cb009102b97b58fefd19d9201fdc8ce59fb06ec3bb2ba22"
+        },
+        {
+          "ref": "structures/mvp_landmarks.json",
+          "exists": true,
+          "sha256": "c23af8e39637ff1b84f7b37064f9d2ef0d90db9df4c55b1a08d4f1e42c8291e1"
+        },
+        {
+          "ref": "systems/playable_runtime_contract.json",
+          "exists": true,
+          "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+        }
+      ],
+      "plannedActions": [
+        "generate_minimum_seed_samples",
+        "record_spawn_position",
+        "scan_64_block_radius_for_wood_stone_fiber_food_water",
+        "scan_128_block_radius_for_cave_road_or_ruin_hook",
+        "scan_16_block_radius_for_hostiles"
+      ],
+      "rehearsalActions": [
+        "mapped_generate_minimum_seed_samples",
+        "mapped_record_spawn_position",
+        "mapped_scan_64_block_radius_for_wood_stone_fiber_food_water",
+        "mapped_scan_128_block_radius_for_cave_road_or_ruin_hook",
+        "mapped_scan_16_block_radius_for_hostiles"
+      ],
+      "assertions": [
+        {
+          "id": "all_required_starter_resources_found",
+          "status": "passed"
+        },
+        {
+          "id": "visible_exploration_hook_found",
+          "status": "passed"
+        },
+        {
+          "id": "nearest_hostile_distance_is_at_least_16_blocks",
+          "status": "passed"
+        },
+        {
+          "id": "failed_seed_regenerates_or_rejects_starter_area",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "ac05c8dc9c70647feb09ceb3e7180e51ae3b64776eb4d0b1ba8e9653a478fcba",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "sampleSeedCount": 3,
+        "allowedStarterBiomes": [
+          "meadows",
+          "woodlands"
+        ],
+        "guaranteedRadiusBlocks": 64,
+        "visibleLandmarkRadiusBlocks": 128,
+        "minimumHostileClearRadiusBlocks": 16,
+        "starterResources": [
+          "echomaterialcore:branchwood_stick",
+          "echomaterialcore:fieldstone_piece",
+          "echomaterialcore:reed_fiber",
+          "berries"
+        ],
+        "acceptedByPureRuntimeHook": true
+      },
+      "savedArtifacts": [
+        "starter_spawn_seed_sweep/input-fixture-summary.json",
+        "starter_spawn_seed_sweep/assertion-map.json",
+        "starter_spawn_seed_sweep/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "minimal_shelter_sleep",
+      "suiteId": "first_hour_world_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.120Z",
+      "finishedAt": "2026-06-13T00:23:07.120Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "progression/first_hour_route.json",
+        "systems/playable_runtime_contract.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "progression/first_hour_route.json",
+          "exists": true,
+          "sha256": "4c80fbd77df12790106f2e9573d6b9b4f3c9aaa658225bc9c43a3e633943bfcb"
+        },
+        {
+          "ref": "systems/playable_runtime_contract.json",
+          "exists": true,
+          "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+        }
+      ],
+      "plannedActions": [
+        "place_branchwood_wall_shell",
+        "place_thatch_or_plank_roof",
+        "place_door_bedroll_and_light",
+        "request_shelter_score",
+        "sleep_until_morning"
+      ],
+      "rehearsalActions": [
+        "mapped_place_branchwood_wall_shell",
+        "mapped_place_thatch_or_plank_roof",
+        "mapped_place_door_bedroll_and_light",
+        "mapped_request_shelter_score",
+        "mapped_sleep_until_morning"
+      ],
+      "assertions": [
+        {
+          "id": "shelter_score_is_at_least_55",
+          "status": "passed"
+        },
+        {
+          "id": "sleep_milestone_allowed",
+          "status": "passed"
+        },
+        {
+          "id": "shelter_does_not_require_perfect_enclosure",
+          "status": "passed"
+        },
+        {
+          "id": "bedroll_spawn_is_set",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "fe90d7b5fee8cd373ae19f357d629a0a9a2739f535afba3309a9199ece502e3f",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "minimumForSleepMilestone": 55,
+        "shelterComponents": [
+          "roof_coverage",
+          "wall_enclosure",
+          "entry_closure",
+          "bedroll_present",
+          "light_or_fire",
+          "hostile_distance"
+        ],
+        "forgivingShelterProof": true,
+        "weakShelterProof": true
+      },
+      "savedArtifacts": [
+        "minimal_shelter_sleep/input-fixture-summary.json",
+        "minimal_shelter_sleep/assertion-map.json",
+        "minimal_shelter_sleep/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "first_hour_route_walkthrough",
+      "suiteId": "first_hour_world_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.123Z",
+      "finishedAt": "2026-06-13T00:23:07.123Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "progression/first_hour_route.json",
+        "playtests/mvp_first_hour_acceptance.json",
+        "tutorials/first_hour_prompts.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "progression/first_hour_route.json",
+          "exists": true,
+          "sha256": "4c80fbd77df12790106f2e9573d6b9b4f3c9aaa658225bc9c43a3e633943bfcb"
+        },
+        {
+          "ref": "playtests/mvp_first_hour_acceptance.json",
+          "exists": true,
+          "sha256": "7beeb5422e8a25813820697a0d3bbc30c9c0a6741385d5a5e949ad0c4f8a6372"
+        },
+        {
+          "ref": "tutorials/first_hour_prompts.json",
+          "exists": true,
+          "sha256": "418ccfb06075f59216b155179938193b1a8931de04bfa1f432736b4035b740a2"
+        }
+      ],
+      "plannedActions": [
+        "gather_starter_materials",
+        "craft_first_tools",
+        "craft_campfire_torches_workbench_and_bedroll",
+        "build_and_sleep_in_shelter",
+        "discover_cave_road_or_ruin",
+        "repair_first_waystone_to_required_mvp_state",
+        "reveal_local_holomap_region"
+      ],
+      "rehearsalActions": [
+        "mapped_gather_starter_materials",
+        "mapped_craft_first_tools",
+        "mapped_craft_campfire_torches_workbench_and_bedroll",
+        "mapped_build_and_sleep_in_shelter",
+        "mapped_discover_cave_road_or_ruin",
+        "mapped_repair_first_waystone_to_required_mvp_state",
+        "mapped_reveal_local_holomap_region"
+      ],
+      "assertions": [
+        {
+          "id": "route_steps_complete_in_order",
+          "status": "passed"
+        },
+        {
+          "id": "discovery_tutorials_fire_once",
+          "status": "passed"
+        },
+        {
+          "id": "all_crafted_recipe_ids_resolve",
+          "status": "passed"
+        },
+        {
+          "id": "first_waystone_updates_holomap",
+          "status": "passed"
+        },
+        {
+          "id": "no_hardcore_meter_blocks_progress",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "5509a7d1d2dbd51f69d023a847c800ed66b1a35c0bc0ace17d1468b7644f8e3c",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "firstHourSteps": [
+          "safe_spawn",
+          "first_gathering",
+          "first_tools",
+          "first_shelter",
+          "sleep_and_recover",
+          "first_exploration_hook",
+          "first_waystone"
+        ],
+        "expectedStepCount": 7,
+        "routeMatchesFixture": true,
+        "blockCount": 26,
+        "itemCount": 20,
+        "recipeCount": 10
+      },
+      "savedArtifacts": [
+        "first_hour_route_walkthrough/input-fixture-summary.json",
+        "first_hour_route_walkthrough/assertion-map.json",
+        "first_hour_route_walkthrough/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "first_hour_save_reload_roundtrip",
+      "suiteId": "first_hour_world_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.126Z",
+      "finishedAt": "2026-06-13T00:23:07.126Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "playtests/mvp_first_hour_acceptance.json",
+        "systems/playable_runtime_contract.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "playtests/mvp_first_hour_acceptance.json",
+          "exists": true,
+          "sha256": "7beeb5422e8a25813820697a0d3bbc30c9c0a6741385d5a5e949ad0c4f8a6372"
+        },
+        {
+          "ref": "systems/playable_runtime_contract.json",
+          "exists": true,
+          "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+        }
+      ],
+      "plannedActions": [
+        "capture_snapshot_after_first_shelter_sleep",
+        "save_exit_reload",
+        "compare_required_first_hour_fields",
+        "capture_snapshot_after_first_waystone_repair",
+        "runtime_restart_reload",
+        "compare_required_waystone_and_holomap_fields"
+      ],
+      "rehearsalActions": [
+        "mapped_capture_snapshot_after_first_shelter_sleep",
+        "mapped_save_exit_reload",
+        "mapped_compare_required_first_hour_fields",
+        "mapped_capture_snapshot_after_first_waystone_repair",
+        "mapped_runtime_restart_reload",
+        "mapped_compare_required_waystone_and_holomap_fields"
+      ],
+      "assertions": [
+        {
+          "id": "inventory_hotbar_placed_blocks_and_chests_roundtrip",
+          "status": "passed"
+        },
+        {
+          "id": "bedroll_spawn_campfire_state_and_shelter_score_roundtrip",
+          "status": "passed"
+        },
+        {
+          "id": "waystone_state_and_holomap_region_discovery_roundtrip",
+          "status": "passed"
+        },
+        {
+          "id": "missing_field_fails_the_report",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "7e178ab4e1ead630d682fe348a9907f51b68b2f8f37ea490da4d70d98d8c7519",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "saveLoadFields": [
+          "inventory",
+          "hotbar",
+          "placedBlocks",
+          "chestContents",
+          "bedrollSpawn",
+          "campfireLitState",
+          "shelterScore",
+          "waystoneState",
+          "holomapRegionDiscovery"
+        ],
+        "saveLoadCheckpointCount": 2,
+        "requiredRoundTripFields": [
+          "inventory",
+          "hotbar",
+          "placedBlocks",
+          "chestContents",
+          "bedrollSpawn",
+          "campfireLitState",
+          "shelterScore",
+          "waystoneState",
+          "holomapRegionDiscovery"
+        ]
+      },
+      "savedArtifacts": [
+        "first_hour_save_reload_roundtrip/input-fixture-summary.json",
+        "first_hour_save_reload_roundtrip/assertion-map.json",
+        "first_hour_save_reload_roundtrip/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "biome_landmark_seed_sweep",
+      "suiteId": "world_creature_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.128Z",
+      "finishedAt": "2026-06-13T00:23:07.128Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "biomes/mvp_biomes.json",
+        "structures/mvp_landmarks.json",
+        "holomap/mvp_regions.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "biomes/mvp_biomes.json",
+          "exists": true,
+          "sha256": "1b9644851c02c7194cb009102b97b58fefd19d9201fdc8ce59fb06ec3bb2ba22"
+        },
+        {
+          "ref": "structures/mvp_landmarks.json",
+          "exists": true,
+          "sha256": "c23af8e39637ff1b84f7b37064f9d2ef0d90db9df4c55b1a08d4f1e42c8291e1"
+        },
+        {
+          "ref": "holomap/mvp_regions.json",
+          "exists": true,
+          "sha256": "420c4f8e2664ae1f5e558400c9f9baa42a81d64c9a26bf8cbb95b8aaef04aa64"
+        }
+      ],
+      "plannedActions": [
+        "generate_region_seed_samples",
+        "visit_meadows_woodlands_stonehills_and_marshlands",
+        "record_landmark_instances",
+        "record_holomap_layers_and_hints"
+      ],
+      "rehearsalActions": [
+        "mapped_generate_region_seed_samples",
+        "mapped_visit_meadows_woodlands_stonehills_and_marshlands",
+        "mapped_record_landmark_instances",
+        "mapped_record_holomap_layers_and_hints"
+      ],
+      "assertions": [
+        {
+          "id": "all_four_mvp_biomes_generate",
+          "status": "passed"
+        },
+        {
+          "id": "landmark_frequency_stays_inside_contract",
+          "status": "passed"
+        },
+        {
+          "id": "old_road_and_ruin_hints_appear_on_holomap",
+          "status": "passed"
+        },
+        {
+          "id": "biome_palettes_use_registered_blocks",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "9435e3247c2b5f3a73825ec61442e32f1998cba89b85b6e806d75ff16b9497bc",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "biomeIds": [
+          "meadows",
+          "woodlands",
+          "stonehills",
+          "marshlands"
+        ],
+        "landmarkIds": [
+          "ruined_well",
+          "road_marker",
+          "tiny_camp",
+          "watchtower",
+          "old_mine",
+          "broken_bridge",
+          "cellar_entrance",
+          "broken_waystone_site"
+        ],
+        "holomapLayers": [
+          {
+            "id": "region_names",
+            "displayName": "Region Names",
+            "visibleByDefault": true,
+            "source": "waystone_or_region_discovery"
+          },
+          {
+            "id": "old_roads",
+            "displayName": "Old Roads",
+            "visibleByDefault": true,
+            "source": "old_road_block_and_marker_discovery"
+          },
+          {
+            "id": "waystones",
+            "displayName": "Waystones",
+            "visibleByDefault": true,
+            "source": "waystone_state_machine"
+          },
+          {
+            "id": "nearby_hints",
+            "displayName": "Nearby Hints",
+            "visibleByDefault": true,
+            "source": "active_waystone_reveal"
+          },
+          {
+            "id": "player_markers",
+            "displayName": "Player Markers",
+            "visibleByDefault": true,
+            "source": "player_created"
+          }
+        ],
+        "regionCount": 0
+      },
+      "savedArtifacts": [
+        "biome_landmark_seed_sweep/input-fixture-summary.json",
+        "biome_landmark_seed_sweep/assertion-map.json",
+        "biome_landmark_seed_sweep/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "creature_spawn_ai_drop_sound_sweep",
+      "suiteId": "world_creature_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.130Z",
+      "finishedAt": "2026-06-13T00:23:07.130Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "creatures/mvp_creatures.json",
+        "loot/mvp_loot.json",
+        "sounds/mvp_sound_contract.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "creatures/mvp_creatures.json",
+          "exists": true,
+          "sha256": "e47d964189d5db86786035a79db72c560be278df35f89b5baa945764c2f307e4"
+        },
+        {
+          "ref": "loot/mvp_loot.json",
+          "exists": true,
+          "sha256": "562ee04d8118a44cad9e2381373e0d268c697a5083d945331458f79b6d14d749"
+        },
+        {
+          "ref": "sounds/mvp_sound_contract.json",
+          "exists": true,
+          "sha256": "41376d09448d619b8e51d1f6ff06f3ba37486f00984fc9e10b3e54e0bb02559e"
+        }
+      ],
+      "plannedActions": [
+        "sample_spawn_tables_for_each_creature",
+        "tick_each_creature_ai_state",
+        "sample_drop_tables",
+        "trigger_creature_sound_events"
+      ],
+      "rehearsalActions": [
+        "mapped_sample_spawn_tables_for_each_creature",
+        "mapped_tick_each_creature_ai_state",
+        "mapped_sample_drop_tables",
+        "mapped_trigger_creature_sound_events"
+      ],
+      "assertions": [
+        {
+          "id": "all_ten_creature_ids_spawn_or_are_directly_spawnable",
+          "status": "passed"
+        },
+        {
+          "id": "passive_neutral_and_hostile_ai_states_tick_without_error",
+          "status": "passed"
+        },
+        {
+          "id": "drops_resolve_to_known_items",
+          "status": "passed"
+        },
+        {
+          "id": "sound_events_resolve_to_openlands_keys",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "b617e59384b1c372e8c500bc296c60dc7cd1ead98c132dd6f0d0071edc29415b",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "creatureIds": [
+          "hare",
+          "deer",
+          "boar",
+          "goat",
+          "marsh_hen",
+          "fish",
+          "greyling",
+          "bristleback",
+          "hollow_stalker",
+          "mire_leech"
+        ],
+        "creatureCount": 10,
+        "soundEventCount": 0,
+        "dropTablesResolve": true
+      },
+      "savedArtifacts": [
+        "creature_spawn_ai_drop_sound_sweep/input-fixture-summary.json",
+        "creature_spawn_ai_drop_sound_sweep/assertion-map.json",
+        "creature_spawn_ai_drop_sound_sweep/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "waystone_repair_state_roundtrip",
+      "suiteId": "waystone_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.132Z",
+      "finishedAt": "2026-06-13T00:23:07.132Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "waystones/waystone_contract.json",
+        "recipes/mvp_recipes.json",
+        "playtests/mvp_first_hour_acceptance.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "waystones/waystone_contract.json",
+          "exists": true,
+          "sha256": "087afe74b911a4325d4b68a7aea527c2417ddad46efc85e89122fa60287dc43d"
+        },
+        {
+          "ref": "recipes/mvp_recipes.json",
+          "exists": true,
+          "sha256": "a436b1eba2cd3d0b52a7e068bc344c460e337607d14d204dab6d7992944b875e"
+        },
+        {
+          "ref": "playtests/mvp_first_hour_acceptance.json",
+          "exists": true,
+          "sha256": "7beeb5422e8a25813820697a0d3bbc30c9c0a6741385d5a5e949ad0c4f8a6372"
+        }
+      ],
+      "plannedActions": [
+        "discover_broken_waystone",
+        "clear_debris",
+        "repair_stone",
+        "install_fittings",
+        "charge_with_core_and_glow_crystal",
+        "bind_route",
+        "save_exit_reload"
+      ],
+      "rehearsalActions": [
+        "mapped_discover_broken_waystone",
+        "mapped_clear_debris",
+        "mapped_repair_stone",
+        "mapped_install_fittings",
+        "mapped_charge_with_core_and_glow_crystal",
+        "mapped_bind_route",
+        "mapped_save_exit_reload"
+      ],
+      "assertions": [
+        {
+          "id": "state_timeline_matches_contract_order",
+          "status": "passed"
+        },
+        {
+          "id": "repair_inputs_are_consumed_once",
+          "status": "passed"
+        },
+        {
+          "id": "contributors_are_recorded",
+          "status": "passed"
+        },
+        {
+          "id": "state_persists_after_reload",
+          "status": "passed"
+        },
+        {
+          "id": "holomap_reveal_persists_after_reload",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "fc8a3111ffc335037a80bf43814ec4f113e6c1897ce3150a83eed776275e920b",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "waystoneStates": [],
+        "repairInputCount": 0,
+        "activeStateProof": true
+      },
+      "savedArtifacts": [
+        "waystone_repair_state_roundtrip/input-fixture-summary.json",
+        "waystone_repair_state_roundtrip/assertion-map.json",
+        "waystone_repair_state_roundtrip/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "two_active_waystones_fast_travel",
+      "suiteId": "waystone_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.135Z",
+      "finishedAt": "2026-06-13T00:23:07.135Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "waystones/waystone_contract.json",
+        "systems/coop_and_smp.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "waystones/waystone_contract.json",
+          "exists": true,
+          "sha256": "087afe74b911a4325d4b68a7aea527c2417ddad46efc85e89122fa60287dc43d"
+        },
+        {
+          "ref": "systems/coop_and_smp.json",
+          "exists": true,
+          "sha256": "0b7c0c5c34e2e5fa169eaa0942d788fb76d95300eea1998cc9bccd7fa0b34cd3"
+        }
+      ],
+      "plannedActions": [
+        "activate_two_waystones",
+        "bind_route_between_waystones",
+        "set_public_travel_permission",
+        "attempt_travel_as_owner_group_and_public_player",
+        "attempt_travel_with_only_one_active_waystone"
+      ],
+      "rehearsalActions": [
+        "mapped_activate_two_waystones",
+        "mapped_bind_route_between_waystones",
+        "mapped_set_public_travel_permission",
+        "mapped_attempt_travel_as_owner_group_and_public_player",
+        "mapped_attempt_travel_with_only_one_active_waystone"
+      ],
+      "assertions": [
+        {
+          "id": "two_active_waystones_unlock_travel",
+          "status": "passed"
+        },
+        {
+          "id": "one_active_waystone_does_not_unlock_travel",
+          "status": "passed"
+        },
+        {
+          "id": "permission_decisions_match_owner_group_public_flags",
+          "status": "passed"
+        },
+        {
+          "id": "travel_result_preserves_inventory_and_destination_state",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "c5eb26274811b84366f88582e280940cdb30331df48f1e8cd394183569a5c60f",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "activeWaystoneCountRequired": 2,
+        "fastTravelProof": true,
+        "permissionModes": [
+          "owner",
+          "group",
+          "public"
+        ]
+      },
+      "savedArtifacts": [
+        "two_active_waystones_fast_travel/input-fixture-summary.json",
+        "two_active_waystones_fast_travel/assertion-map.json",
+        "two_active_waystones_fast_travel/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "old_road_holomap_route_reveal",
+      "suiteId": "waystone_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.138Z",
+      "finishedAt": "2026-06-13T00:23:07.138Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "structures/mvp_landmarks.json",
+        "holomap/mvp_regions.json",
+        "waystones/waystone_contract.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "structures/mvp_landmarks.json",
+          "exists": true,
+          "sha256": "c23af8e39637ff1b84f7b37064f9d2ef0d90db9df4c55b1a08d4f1e42c8291e1"
+        },
+        {
+          "ref": "holomap/mvp_regions.json",
+          "exists": true,
+          "sha256": "420c4f8e2664ae1f5e558400c9f9baa42a81d64c9a26bf8cbb95b8aaef04aa64"
+        },
+        {
+          "ref": "waystones/waystone_contract.json",
+          "exists": true,
+          "sha256": "087afe74b911a4325d4b68a7aea527c2417ddad46efc85e89122fa60287dc43d"
+        }
+      ],
+      "plannedActions": [
+        "walk_old_road_segment",
+        "collect_region_rubbing",
+        "bind_route_on_map_table",
+        "restore_waystone",
+        "reload_world"
+      ],
+      "rehearsalActions": [
+        "mapped_walk_old_road_segment",
+        "mapped_collect_region_rubbing",
+        "mapped_bind_route_on_map_table",
+        "mapped_restore_waystone",
+        "mapped_reload_world"
+      ],
+      "assertions": [
+        {
+          "id": "old_road_segment_records_on_holomap",
+          "status": "passed"
+        },
+        {
+          "id": "route_binding_links_waystone_ids",
+          "status": "passed"
+        },
+        {
+          "id": "nearby_hints_remain_visible_after_reload",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "4cf16a838d0b5328513c732a1bddf7293c398e1e68e2e4e1646fc3279b9c49e1",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "oldRoadLayerPresent": true,
+        "routeItemIds": [
+          "region_rubbing",
+          "old_road_token",
+          "waystone_core",
+          "route_binding"
+        ],
+        "landmarkIds": [
+          "road_marker",
+          "broken_waystone_site"
+        ]
+      },
+      "savedArtifacts": [
+        "old_road_holomap_route_reveal/input-fixture-summary.json",
+        "old_road_holomap_route_reveal/assertion-map.json",
+        "old_road_holomap_route_reveal/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "relaxed_homestead_growth_and_cookpot",
+      "suiteId": "alpha_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.140Z",
+      "finishedAt": "2026-06-13T00:23:07.140Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "systems/homestead_alpha.json",
+        "items/mvp_items.json",
+        "recipes/mvp_recipes.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "systems/homestead_alpha.json",
+          "exists": true,
+          "sha256": "c75d243c981e6015670224a860aa2c94811a16fe4017e9a4ba5bf4d407abf575"
+        },
+        {
+          "ref": "items/mvp_items.json",
+          "exists": true,
+          "sha256": "3e4b02db481183bab23cf9af10235be1bc97108a42c265787bf894e96bd506ac"
+        },
+        {
+          "ref": "recipes/mvp_recipes.json",
+          "exists": true,
+          "sha256": "a436b1eba2cd3d0b52a7e068bc344c460e337607d14d204dab6d7992944b875e"
+        }
+      ],
+      "plannedActions": [
+        "plant_grain_root_crop_and_berry",
+        "advance_unwatered_standard_crop",
+        "water_and_compost_crop",
+        "cook_three_ingredient_stew",
+        "save_exit_reload"
+      ],
+      "rehearsalActions": [
+        "mapped_plant_grain_root_crop_and_berry",
+        "mapped_advance_unwatered_standard_crop",
+        "mapped_water_and_compost_crop",
+        "mapped_cook_three_ingredient_stew",
+        "mapped_save_exit_reload"
+      ],
+      "assertions": [
+        {
+          "id": "unwatered_standard_crop_pauses_without_death",
+          "status": "passed"
+        },
+        {
+          "id": "watered_composted_crop_advances",
+          "status": "passed"
+        },
+        {
+          "id": "cookpot_requires_ingredients_and_time",
+          "status": "passed"
+        },
+        {
+          "id": "crop_and_cookpot_state_roundtrip",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "8cf36fbd4b349db01d1509f18b8e98cd83f1cb4c7cb5d8deca5e8bfb2f2fb2df",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "cropIds": [
+          "grain",
+          "root_crop",
+          "berries"
+        ],
+        "standardCropPauseProof": true,
+        "wateredCompostedProof": true,
+        "cookpotProof": true
+      },
+      "savedArtifacts": [
+        "relaxed_homestead_growth_and_cookpot/input-fixture-summary.json",
+        "relaxed_homestead_growth_and_cookpot/assertion-map.json",
+        "relaxed_homestead_growth_and_cookpot/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "animal_pen_and_trader_surplus",
+      "suiteId": "alpha_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.142Z",
+      "finishedAt": "2026-06-13T00:23:07.142Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "systems/homestead_alpha.json",
+        "creatures/mvp_creatures.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "systems/homestead_alpha.json",
+          "exists": true,
+          "sha256": "c75d243c981e6015670224a860aa2c94811a16fe4017e9a4ba5bf4d407abf575"
+        },
+        {
+          "ref": "creatures/mvp_creatures.json",
+          "exists": true,
+          "sha256": "e47d964189d5db86786035a79db72c560be278df35f89b5baa945764c2f307e4"
+        }
+      ],
+      "plannedActions": [
+        "create_small_animal_pen",
+        "assign_allowed_creature",
+        "produce_surplus_food_or_material",
+        "open_trader_demand",
+        "complete_surplus_trade"
+      ],
+      "rehearsalActions": [
+        "mapped_create_small_animal_pen",
+        "mapped_assign_allowed_creature",
+        "mapped_produce_surplus_food_or_material",
+        "mapped_open_trader_demand",
+        "mapped_complete_surplus_trade"
+      ],
+      "assertions": [
+        {
+          "id": "pen_accepts_only_allowed_creatures",
+          "status": "passed"
+        },
+        {
+          "id": "surplus_items_resolve_to_known_items",
+          "status": "passed"
+        },
+        {
+          "id": "trader_demand_does_not_require_hardcore_upkeep",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "e7ffa30b185612c24d602aaa6e652900fe58b37a629da2d7fca28bbac51deefd",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "penIds": [
+          "hare_pen",
+          "goat_pen",
+          "marsh_hen_pen"
+        ],
+        "traderDemandPoolCount": 2,
+        "standardNoUpkeepDeath": true
+      },
+      "savedArtifacts": [
+        "animal_pen_and_trader_surplus/input-fixture-summary.json",
+        "animal_pen_and_trader_surplus/assertion-map.json",
+        "animal_pen_and_trader_surplus/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "builder_hammer_scaffold_inventory_storage",
+      "suiteId": "alpha_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.144Z",
+      "finishedAt": "2026-06-13T00:23:07.144Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "systems/builder_ux_alpha.json",
+        "systems/coop_and_smp.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "systems/builder_ux_alpha.json",
+          "exists": true,
+          "sha256": "db84d3dc722e7f22814abbbf1cdc2fcd6604f1836174a1bc00110c45cdbb210f"
+        },
+        {
+          "ref": "systems/coop_and_smp.json",
+          "exists": true,
+          "sha256": "0b7c0c5c34e2e5fa169eaa0942d788fb76d95300eea1998cc9bccd7fa0b34cd3"
+        }
+      ],
+      "plannedActions": [
+        "cycle_hammer_shape_variants",
+        "place_and_expire_scaffold",
+        "quick_stack_to_named_chest",
+        "quick_deposit_matching_items",
+        "sort_inventory",
+        "craft_from_nearby_storage",
+        "repeat_commands_without_permission"
+      ],
+      "rehearsalActions": [
+        "mapped_cycle_hammer_shape_variants",
+        "mapped_place_and_expire_scaffold",
+        "mapped_quick_stack_to_named_chest",
+        "mapped_quick_deposit_matching_items",
+        "mapped_sort_inventory",
+        "mapped_craft_from_nearby_storage",
+        "mapped_repeat_commands_without_permission"
+      ],
+      "assertions": [
+        {
+          "id": "hammer_variants_do_not_mutate_inventory_incorrectly",
+          "status": "passed"
+        },
+        {
+          "id": "scaffold_has_temporary_behavior",
+          "status": "passed"
+        },
+        {
+          "id": "storage_transactions_are_server_authoritative",
+          "status": "passed"
+        },
+        {
+          "id": "permission_denials_do_not_desync_items",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "c9bef14d2af2735e4e4d4f3a3483ff12155eea4d8a009df14b87d7188c125146",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "toolIds": [
+          "echotoolcore:field_hammer"
+        ],
+        "temporaryBlockIds": [
+          "scaffold_bundle"
+        ],
+        "inventoryCommandIds": [
+          "quick_stack",
+          "quick_deposit",
+          "sort_inventory",
+          "craft_from_nearby_storage",
+          "named_chests"
+        ],
+        "serverAuthorityProof": true
+      },
+      "savedArtifacts": [
+        "builder_hammer_scaffold_inventory_storage/input-fixture-summary.json",
+        "builder_hammer_scaffold_inventory_storage/assertion-map.json",
+        "builder_hammer_scaffold_inventory_storage/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "artifact_upload_download_hash",
+      "suiteId": "launcher_distribution_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.146Z",
+      "finishedAt": "2026-06-13T00:23:07.146Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "systems/distribution_alpha_gates.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "systems/distribution_alpha_gates.json",
+          "exists": true,
+          "sha256": "0d689c4505c0d278d6fc802cef49554fbb032b2d647a45044410ce73c152d3a0"
+        }
+      ],
+      "plannedActions": [
+        "upload_native_standalone_neoforge_and_sources_artifacts",
+        "publish_release_index_entries",
+        "download_each_artifact_from_index",
+        "verify_sha256_and_size"
+      ],
+      "rehearsalActions": [
+        "mapped_upload_native_standalone_neoforge_and_sources_artifacts",
+        "mapped_publish_release_index_entries",
+        "mapped_download_each_artifact_from_index",
+        "mapped_verify_sha256_and_size"
+      ],
+      "assertions": [
+        {
+          "id": "all_required_artifact_urls_are_present",
+          "status": "passed"
+        },
+        {
+          "id": "downloaded_sha256_matches_index",
+          "status": "passed"
+        },
+        {
+          "id": "downloaded_size_matches_index",
+          "status": "passed"
+        },
+        {
+          "id": "release_index_state_can_advance_from_warning_only_after_all_checks",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "6f3d29ca1e438bda7e8129d16f2e0c054b15575b6516aa12d236a69ddc769b05",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "localOnly": true,
+        "publicDownloadUrlsPresent": false,
+        "releaseIndexDownloadVerificationRequired": true
+      },
+      "savedArtifacts": [
+        "artifact_upload_download_hash/input-fixture-summary.json",
+        "artifact_upload_download_hash/assertion-map.json",
+        "artifact_upload_download_hash/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "launcher_install_update_repair_rollback",
+      "suiteId": "launcher_distribution_runtime",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.148Z",
+      "finishedAt": "2026-06-13T00:23:07.148Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "systems/launcher_flow_acceptance.json",
+        "systems/distribution_alpha_gates.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "systems/launcher_flow_acceptance.json",
+          "exists": true,
+          "sha256": "2f388c0355815d27b50c6c712e7ce45d3177b42cd008ec50888493f6d7833893"
+        },
+        {
+          "ref": "systems/distribution_alpha_gates.json",
+          "exists": true,
+          "sha256": "0d689c4505c0d278d6fc802cef49554fbb032b2d647a45044410ce73c152d3a0"
+        }
+      ],
+      "plannedActions": [
+        "fresh_install_each_edition_from_launcher",
+        "update_from_previous_manifest",
+        "corrupt_and_repair_artifact",
+        "rollback_to_previous_manifest",
+        "verify_world_and_config_preservation"
+      ],
+      "rehearsalActions": [
+        "mapped_fresh_install_each_edition_from_launcher",
+        "mapped_update_from_previous_manifest",
+        "mapped_corrupt_and_repair_artifact",
+        "mapped_rollback_to_previous_manifest",
+        "mapped_verify_world_and_config_preservation"
+      ],
+      "assertions": [
+        {
+          "id": "install_downloads_required_artifacts",
+          "status": "passed"
+        },
+        {
+          "id": "update_preserves_worlds_and_configs",
+          "status": "passed"
+        },
+        {
+          "id": "repair_restores_hashes",
+          "status": "passed"
+        },
+        {
+          "id": "rollback_preserves_worlds",
+          "status": "passed"
+        },
+        {
+          "id": "launcher_logs_include_success_for_each_flow",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "11d18d9ebd2591077d0149aa3af81bb3e6be16dd4288b68e639c3061dbda721a",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "localLauncherRehearsalStatus": "preflight_passed",
+        "localLauncherRehearsalFlowCount": 4,
+        "realLauncherExecutionStillRequired": true
+      },
+      "savedArtifacts": [
+        "launcher_install_update_repair_rollback/input-fixture-summary.json",
+        "launcher_install_update_repair_rollback/assertion-map.json",
+        "launcher_install_update_repair_rollback/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "final_owned_asset_review",
+      "suiteId": "final_asset_release_review",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.150Z",
+      "finishedAt": "2026-06-13T00:23:07.150Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "assets/echoopenlandsprotocol/asset_manifest.json",
+        "systems/legal_content_audit.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "assets/echoopenlandsprotocol/asset_manifest.json",
+          "exists": true,
+          "sha256": "7cd21d0ea59f672ada60028ca746d1b779b6f6e1aa56bba75bc9db462cf717a9"
+        },
+        {
+          "ref": "systems/legal_content_audit.json",
+          "exists": true,
+          "sha256": "d6024cc2aec22f22b1f170caef12c028da8b24032decc4e2f7f7c817be244371"
+        }
+      ],
+      "plannedActions": [
+        "review_all_block_textures_models_and_blockstates",
+        "review_all_item_icons_and_models",
+        "compare_placeholder_manifest_to_final_assets",
+        "record_human_review_signature"
+      ],
+      "rehearsalActions": [
+        "mapped_review_all_block_textures_models_and_blockstates",
+        "mapped_review_all_item_icons_and_models",
+        "mapped_compare_placeholder_manifest_to_final_assets",
+        "mapped_record_human_review_signature"
+      ],
+      "assertions": [
+        {
+          "id": "all_public_assets_are_openlands_owned",
+          "status": "passed"
+        },
+        {
+          "id": "remaining_placeholder_count_is_zero_for_public_release",
+          "status": "passed"
+        },
+        {
+          "id": "no_copied_textures_or_silhouettes_are_approved",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "c2328ff13fe60296bc862040c66a73af2be670685aea649ce615ba18adf56458",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "assetManifestSchema": "echo.openlands.assets.v1",
+        "placeholderPolicyPresent": true,
+        "legalAuditContract": "echo.openlands.systems.legal_content_audit.v1",
+        "humanReviewStillRequired": true
+      },
+      "savedArtifacts": [
+        "final_owned_asset_review/input-fixture-summary.json",
+        "final_owned_asset_review/assertion-map.json",
+        "final_owned_asset_review/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    },
+    {
+      "id": "final_sound_and_branding_review",
+      "suiteId": "final_asset_release_review",
+      "status": "preflight_passed",
+      "startedAt": "2026-06-13T00:23:07.152Z",
+      "finishedAt": "2026-06-13T00:23:07.152Z",
+      "durationMs": 0,
+      "runtimeTarget": "echo_runtime_standalone",
+      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "inputFixtureRefs": [
+        "sounds/mvp_sound_contract.json",
+        "assets/echoopenlandsprotocol/sounds.json",
+        "config/content_policy.json"
+      ],
+      "fixtureResults": [
+        {
+          "ref": "sounds/mvp_sound_contract.json",
+          "exists": true,
+          "sha256": "41376d09448d619b8e51d1f6ff06f3ba37486f00984fc9e10b3e54e0bb02559e"
+        },
+        {
+          "ref": "assets/echoopenlandsprotocol/sounds.json",
+          "exists": true,
+          "sha256": "e5197ba6d2bedb334f802f09061c4ac4b8d019b4d914bbdd2278d5c2f8354020"
+        },
+        {
+          "ref": "config/content_policy.json",
+          "exists": true,
+          "sha256": "012ab0133e11874014e94ed78429efa03c1f3af964298d797a60e0ef6c643396"
+        }
+      ],
+      "plannedActions": [
+        "review_all_sound_events_and_audio_sources",
+        "review_launcher_and_pack_public_text",
+        "scan_generated_runtime_output",
+        "record_human_review_signature"
+      ],
+      "rehearsalActions": [
+        "mapped_review_all_sound_events_and_audio_sources",
+        "mapped_review_launcher_and_pack_public_text",
+        "mapped_scan_generated_runtime_output",
+        "mapped_record_human_review_signature"
+      ],
+      "assertions": [
+        {
+          "id": "all_public_audio_is_openlands_owned_or_licensed",
+          "status": "passed"
+        },
+        {
+          "id": "public_text_uses_openlands_identity_only",
+          "status": "passed"
+        },
+        {
+          "id": "no_minecraft_branding_or_copied_recipe_identity_ships",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "fixtureHash": "fb3b3eb1929d63472d02a554b44a1ee6dba0f5dc632b6692f15bbff2318316e7",
+        "runtimeCoreProofCount": 15,
+        "moduleVersion": "0.1.0",
+        "soundContractSchema": "echo.openlands.sounds.v1",
+        "soundEventCount": 0,
+        "forbiddenTermsCount": 22,
+        "humanReviewStillRequired": true
+      },
+      "savedArtifacts": [
+        "final_sound_and_branding_review/input-fixture-summary.json",
+        "final_sound_and_branding_review/assertion-map.json",
+        "final_sound_and_branding_review/capture-summary.json"
+      ],
+      "realRuntimeExecutionRequiredBeforePublicAlpha": true,
+      "clearsRuntimeGates": false
+    }
+  ],
+  "scenarioCount": 17,
+  "blockedBy": [
+    "real_adapter_execution_missing",
+    "real_launcher_execution_missing",
+    "public_release_download_urls_missing",
+    "final_asset_human_review_missing",
+    "local_rehearsal_does_not_clear_runtime_gates"
+  ],
+  "proofs": [
+    "runtime_execution_contract_loaded",
+    "runtime_core_report_passed",
+    "compiled_artifact_available",
+    "all_runtime_scenarios_mapped",
+    "all_input_fixtures_resolve",
+    "pure_runtime_hooks_cover_standard_rules",
+    "first_hour_route_fixture_resolves",
+    "worldgen_biome_creature_contracts_resolve",
+    "waystone_homestead_builder_contracts_resolve",
+    "external_release_review_scenarios_remain_blocked_for_real_execution",
+    "public_alpha_stays_blocked_until_real_runtime_execution"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-local-runtime-rehearsal-report.json"
+}

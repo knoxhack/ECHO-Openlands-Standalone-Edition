@@ -1,0 +1,16 @@
+{
+  "fixtureHash": "4cf16a838d0b5328513c732a1bddf7293c398e1e68e2e4e1646fc3279b9c49e1",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "oldRoadLayerPresent": true,
+  "routeItemIds": [
+    "region_rubbing",
+    "old_road_token",
+    "waystone_core",
+    "route_binding"
+  ],
+  "landmarkIds": [
+    "road_marker",
+    "broken_waystone_site"
+  ]
+}

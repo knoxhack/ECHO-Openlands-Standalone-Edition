@@ -1,0 +1,20 @@
+{
+  "fixtureHash": "b617e59384b1c372e8c500bc296c60dc7cd1ead98c132dd6f0d0071edc29415b",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "creatureIds": [
+    "hare",
+    "deer",
+    "boar",
+    "goat",
+    "marsh_hen",
+    "fish",
+    "greyling",
+    "bristleback",
+    "hollow_stalker",
+    "mire_leech"
+  ],
+  "creatureCount": 10,
+  "soundEventCount": 0,
+  "dropTablesResolve": true
+}

@@ -1,0 +1,9 @@
+{
+  "fixtureHash": "fb3b3eb1929d63472d02a554b44a1ee6dba0f5dc632b6692f15bbff2318316e7",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "soundContractSchema": "echo.openlands.sounds.v1",
+  "soundEventCount": 0,
+  "forbiddenTermsCount": 22,
+  "humanReviewStillRequired": true
+}

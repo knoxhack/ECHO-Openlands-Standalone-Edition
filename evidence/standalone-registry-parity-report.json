@@ -1,0 +1,223 @@
+{
+  "schema": "echo.openlands.edition.registry_parity_report.v1",
+  "status": "preflight_passed",
+  "realRegistryParityExecutionRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:04.352Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "conformanceFixture": "data/echoopenlandsprotocol/openlands/conformance/openlands_mvp_registry.json",
+  "parityContract": "data/echoopenlandsprotocol/openlands/systems/cross_platform_parity.json",
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/conformance/openlands_mvp_registry.json",
+      "data/echoopenlandsprotocol/openlands/systems/cross_platform_parity.json",
+      "data/echoopenlandsprotocol/openlands/blocks/mvp_blocks.json",
+      "data/echoopenlandsprotocol/openlands/items/mvp_items.json",
+      "data/echoopenlandsprotocol/openlands/recipes/mvp_recipes.json",
+      "data/echoopenlandsprotocol/openlands/biomes/mvp_biomes.json",
+      "data/echoopenlandsprotocol/openlands/structures/mvp_landmarks.json",
+      "data/echoopenlandsprotocol/openlands/creatures/mvp_creatures.json",
+      "data/echoopenlandsprotocol/openlands/waystones/waystone_contract.json"
+    ]
+  },
+  "registryCounts": {
+    "blocks": 26,
+    "items": 20,
+    "recipes": 10,
+    "biomes": 4,
+    "structures": 8,
+    "creatures": 10,
+    "waystoneStates": 8,
+    "systems": 19
+  },
+  "nonShippingRecipeRefs": [
+    {
+      "item": "soil_clump",
+      "recipeRef": "openlands:dig_meadow_grass_block"
+    },
+    {
+      "item": "soil_clump",
+      "recipeRef": "openlands:compost_from_plant_matter"
+    },
+    {
+      "item": "glow_crystal",
+      "recipeRef": "openlands:mine_glow_crystal_cluster"
+    },
+    {
+      "item": "berries",
+      "recipeRef": "openlands:forage_berries"
+    },
+    {
+      "item": "mushroom",
+      "recipeRef": "openlands:forage_mushroom"
+    },
+    {
+      "item": "raw_meat",
+      "recipeRef": "openlands:creature_meat_drop"
+    },
+    {
+      "item": "raw_meat",
+      "recipeRef": "openlands:cooked_meat"
+    },
+    {
+      "item": "grain",
+      "recipeRef": "openlands:harvest_grain"
+    },
+    {
+      "item": "root_crop",
+      "recipeRef": "openlands:harvest_root_crop"
+    },
+    {
+      "item": "fish",
+      "recipeRef": "openlands:catch_fish"
+    },
+    {
+      "item": "fish",
+      "recipeRef": "echoworldstarter:campfire_fish"
+    },
+    {
+      "item": "small_pack",
+      "recipeRef": "openlands:small_pack"
+    },
+    {
+      "item": "repair_kit",
+      "recipeRef": "openlands:repair_kit"
+    },
+    {
+      "item": "compost",
+      "recipeRef": "openlands:compost_from_plant_matter"
+    },
+    {
+      "item": "scaffold_bundle",
+      "recipeRef": "openlands:scaffold_bundle"
+    },
+    {
+      "item": "wooden_bowl",
+      "recipeRef": "openlands:wooden_bowl"
+    }
+  ],
+  "nonRegistryBiomeResources": [
+    {
+      "biome": "stonehills",
+      "resource": "cave_mouth"
+    },
+    {
+      "biome": "stonehills",
+      "resource": "old_mine"
+    }
+  ],
+  "paritySurfaces": [
+    {
+      "id": "registry_ids",
+      "mustMatch": [
+        "blocks",
+        "items",
+        "recipes",
+        "biomes",
+        "structures",
+        "creatures",
+        "waystones"
+      ],
+      "allowedRuntimeDifference": "resource_location_format_only"
+    },
+    {
+      "id": "first_hour_save_load",
+      "mustMatch": [
+        "inventory",
+        "hotbar",
+        "placed_blocks",
+        "chest_contents",
+        "bedroll_spawn",
+        "campfire_lit_state",
+        "shelter_score",
+        "waystone_state",
+        "holomap_region_discovery"
+      ],
+      "allowedRuntimeDifference": "ui_layout"
+    },
+    {
+      "id": "standard_mode_rules",
+      "mustMatch": [
+        "gentle_hunger",
+        "no_stamina",
+        "no_hydration",
+        "no_food_spoilage",
+        "no_temperature_damage",
+        "recoverable_death_pack",
+        "moderate_hostiles"
+      ],
+      "allowedRuntimeDifference": "difficulty_label_copy"
+    },
+    {
+      "id": "waystone_state_machine",
+      "mustMatch": [
+        "undiscovered",
+        "discovered",
+        "debris_cleared",
+        "stone_repaired",
+        "fitted",
+        "charged",
+        "bound",
+        "active"
+      ],
+      "allowedRuntimeDifference": "animation_and_audio_timing"
+    }
+  ],
+  "runtimeResponsibilities": [
+    "load_common_json_registries_without_minecraft_classes",
+    "provide_standalone_block_and_item_runtime",
+    "provide_standalone_worldgen",
+    "persist_inventory_shelter_waystone_holomap_state",
+    "honor_openlands_standard_config"
+  ],
+  "saveLoadFields": [
+    "inventory",
+    "hotbar",
+    "placedBlocks",
+    "chestContents",
+    "bedrollSpawn",
+    "campfireLitState",
+    "shelterScore",
+    "waystoneState",
+    "holomapRegionDiscovery"
+  ],
+  "standardModeRules": {
+    "health": true,
+    "hunger": "gentle",
+    "naturalHealingRequiresFood": true,
+    "stamina": false,
+    "hydration": false,
+    "foodSpoilage": false,
+    "temperatureDamage": false,
+    "weatherDamage": false,
+    "deathPack": "recoverable",
+    "hostiles": "moderate",
+    "waystoneTravel": "requires_two_active_waystones"
+  },
+  "blockedBy": [
+    "real_runtime_registry_parity_test_missing",
+    "adapter_boot_execution_missing",
+    "runtime_id_mapping_report_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-registry-parity-report.json",
+  "proofs": [
+    "conformance_registry_loaded",
+    "block_item_recipe_biome_creature_ids_match_conformance",
+    "registry_references_resolve",
+    "cross_platform_parity_target_matches_edition",
+    "parity_surfaces_declared",
+    "standard_mode_rules_match_parity_surface",
+    "first_hour_save_load_fields_match_parity_surface",
+    "waystone_state_machine_matches_parity_surface",
+    "compiled_artifact_contains_registry_contracts",
+    "public_alpha_blocked_until_real_registry_parity_execution"
+  ]
+}

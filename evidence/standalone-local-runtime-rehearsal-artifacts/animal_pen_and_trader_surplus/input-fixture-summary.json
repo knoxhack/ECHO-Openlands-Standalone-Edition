@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "systems/homestead_alpha.json",
+    "exists": true,
+    "sha256": "c75d243c981e6015670224a860aa2c94811a16fe4017e9a4ba5bf4d407abf575"
+  },
+  {
+    "ref": "creatures/mvp_creatures.json",
+    "exists": true,
+    "sha256": "e47d964189d5db86786035a79db72c560be278df35f89b5baa945764c2f307e4"
+  }
+]

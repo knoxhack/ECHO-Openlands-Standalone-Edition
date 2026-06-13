@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "hammer_variants_do_not_mutate_inventory_incorrectly",
+    "scaffold_has_temporary_behavior",
+    "storage_transactions_are_server_authoritative",
+    "permission_denials_do_not_desync_items"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

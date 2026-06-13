@@ -1,0 +1,269 @@
+{
+  "schema": "echo.openlands.edition.adapter_boot_report.v1",
+  "status": "preflight_passed",
+  "realAdapterBootRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:04.195Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "runtimeEvidenceContract": "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "entriesChecked": [
+      "META-INF/echo.mod.json",
+      "assets/echoopenlandsprotocol/sounds.json",
+      "com/knoxhack/echoopenlandsprotocol/contract/OpenlandsRuntimeContracts.class",
+      "data/echoopenlandsprotocol/openlands/biomes/mvp_biomes.json",
+      "data/echoopenlandsprotocol/openlands/blocks/mvp_blocks.json",
+      "data/echoopenlandsprotocol/openlands/config/content_policy.json",
+      "data/echoopenlandsprotocol/openlands/config/game_modes.json",
+      "data/echoopenlandsprotocol/openlands/conformance/openlands_mvp_registry.json",
+      "data/echoopenlandsprotocol/openlands/creatures/mvp_creatures.json",
+      "data/echoopenlandsprotocol/openlands/holomap/mvp_regions.json",
+      "data/echoopenlandsprotocol/openlands/index/mvp_gameplay_catalog.json",
+      "data/echoopenlandsprotocol/openlands/index/openlands_overview.json",
+      "data/echoopenlandsprotocol/openlands/items/mvp_items.json",
+      "data/echoopenlandsprotocol/openlands/loot/mvp_loot.json",
+      "data/echoopenlandsprotocol/openlands/playtests/mvp_first_hour_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/progression/first_hour_route.json",
+      "data/echoopenlandsprotocol/openlands/progression/launch_roadmap.json",
+      "data/echoopenlandsprotocol/openlands/progression/production_phase_matrix.json",
+      "data/echoopenlandsprotocol/openlands/recipes/mvp_recipes.json",
+      "data/echoopenlandsprotocol/openlands/sounds/mvp_sound_contract.json",
+      "data/echoopenlandsprotocol/openlands/structures/mvp_landmarks.json",
+      "data/echoopenlandsprotocol/openlands/systems/builder_ux_alpha.json",
+      "data/echoopenlandsprotocol/openlands/systems/coop_and_smp.json",
+      "data/echoopenlandsprotocol/openlands/systems/cross_platform_parity.json",
+      "data/echoopenlandsprotocol/openlands/systems/distribution_alpha_gates.json",
+      "data/echoopenlandsprotocol/openlands/systems/distribution_approval_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/distribution_approval_harness_plan.json",
+      "data/echoopenlandsprotocol/openlands/systems/final_release_review_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/final_release_review_harness_plan.json",
+      "data/echoopenlandsprotocol/openlands/systems/harness_driver_manifest_contract.json",
+      "data/echoopenlandsprotocol/openlands/systems/homestead_alpha.json",
+      "data/echoopenlandsprotocol/openlands/systems/launcher_execution_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/launcher_execution_harness_plan.json",
+      "data/echoopenlandsprotocol/openlands/systems/launcher_flow_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/legal_content_audit.json",
+      "data/echoopenlandsprotocol/openlands/systems/playable_runtime_contract.json",
+      "data/echoopenlandsprotocol/openlands/systems/release_publication_manifest_contract.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_execution_acceptance.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_execution_harness_plan.json",
+      "data/echoopenlandsprotocol/openlands/tags/mvp_tags.json",
+      "data/echoopenlandsprotocol/openlands/tutorials/first_hour_prompts.json",
+      "data/echoopenlandsprotocol/openlands/waystones/waystone_contract.json"
+    ]
+  },
+  "descriptor": {
+    "id": "echoopenlandsprotocol",
+    "version": "0.1.0",
+    "kind": "pack_root",
+    "role": "official_pack",
+    "official": true,
+    "runtimes": [
+      "neoforge",
+      "echo_native",
+      "echo_runtime_standalone"
+    ]
+  },
+  "phases": [
+    {
+      "id": "discover",
+      "order": 10,
+      "gate": "module_descriptor"
+    },
+    {
+      "id": "load_data",
+      "order": 20,
+      "gate": "canonical_json"
+    },
+    {
+      "id": "register_content",
+      "order": 30,
+      "gate": "registry_surface"
+    },
+    {
+      "id": "bind_worldgen",
+      "order": 40,
+      "gate": "world_surface"
+    },
+    {
+      "id": "bind_gameplay_state",
+      "order": 50,
+      "gate": "state_surface"
+    },
+    {
+      "id": "ready",
+      "order": 60,
+      "gate": "runtime_ready"
+    },
+    {
+      "id": "release_gate",
+      "order": 70,
+      "gate": "public_alpha_release"
+    }
+  ],
+  "loadStepSummaries": [
+    {
+      "id": "discover_module_descriptor",
+      "phase": "discover",
+      "successSignal": "openlands_descriptor_loaded",
+      "resources": 1,
+      "requiredEvidence": 4
+    },
+    {
+      "id": "load_standard_mode_and_policy",
+      "phase": "load_data",
+      "successSignal": "openlands_standard_config_loaded",
+      "resources": 2,
+      "requiredEvidence": 3
+    },
+    {
+      "id": "load_core_registry_payloads",
+      "phase": "load_data",
+      "successSignal": "openlands_core_registries_loaded",
+      "resources": 6,
+      "requiredEvidence": 4
+    },
+    {
+      "id": "load_world_and_system_payloads",
+      "phase": "load_data",
+      "successSignal": "openlands_world_and_system_contracts_loaded",
+      "resources": 31,
+      "requiredEvidence": 3
+    },
+    {
+      "id": "register_blocks_items_tags_and_loot",
+      "phase": "register_content",
+      "successSignal": "openlands_content_ids_registered",
+      "resources": 4,
+      "requiredEvidence": 5
+    },
+    {
+      "id": "register_recipes_and_station_surfaces",
+      "phase": "register_content",
+      "successSignal": "openlands_recipe_stations_registered",
+      "resources": 1,
+      "requiredEvidence": 3
+    },
+    {
+      "id": "bind_biomes_structures_creatures_and_spawn",
+      "phase": "bind_worldgen",
+      "successSignal": "openlands_worldgen_bound",
+      "resources": 4,
+      "requiredEvidence": 4
+    },
+    {
+      "id": "bind_first_hour_shelter_and_save_load",
+      "phase": "bind_gameplay_state",
+      "successSignal": "openlands_first_hour_state_bound",
+      "resources": 5,
+      "requiredEvidence": 3
+    },
+    {
+      "id": "bind_waystones_holomap_and_multiplayer_state",
+      "phase": "bind_gameplay_state",
+      "successSignal": "openlands_waystone_network_bound",
+      "resources": 4,
+      "requiredEvidence": 3
+    },
+    {
+      "id": "bind_homestead_builder_and_audio",
+      "phase": "bind_gameplay_state",
+      "successSignal": "openlands_alpha_surfaces_bound",
+      "resources": 5,
+      "requiredEvidence": 4
+    },
+    {
+      "id": "report_runtime_ready",
+      "phase": "ready",
+      "successSignal": "openlands_runtime_ready",
+      "resources": 3,
+      "requiredEvidence": 3
+    },
+    {
+      "id": "approve_public_alpha_release",
+      "phase": "release_gate",
+      "successSignal": "openlands_public_alpha_release_approved",
+      "resources": 14,
+      "requiredEvidence": 6
+    }
+  ],
+  "runtimeEvidenceIds": [
+    "descriptor_resolved",
+    "module_identity_verified",
+    "runtime_target_accepted",
+    "source_root_mounted",
+    "standard_mode_relaxed",
+    "hardlands_optional",
+    "legal_policy_accepted",
+    "registry_json_parsed",
+    "runtime_parity_declared",
+    "minimum_content_counts_met",
+    "registry_ids_resolved",
+    "block_ids_registered",
+    "item_ids_registered",
+    "recipe_ids_registered",
+    "tag_ids_registered",
+    "canonical_echo_ids_retained",
+    "loot_tables_bound",
+    "station_surfaces_bound",
+    "biome_palettes_bound",
+    "spawn_tables_bound",
+    "landmark_pools_bound",
+    "starter_spawn_guarantees_bound",
+    "tutorial_triggers_bound",
+    "shelter_score_bound",
+    "first_hour_save_load_ready",
+    "waystone_state_persistence_ready",
+    "holomap_region_persistence_ready",
+    "multiplayer_permissions_bound",
+    "homestead_state_bound",
+    "builder_ux_bound",
+    "sound_events_bound",
+    "missing_asset_policy_applied",
+    "adapter_ready_signal",
+    "runtime_smoke_test_ready",
+    "hardcore_meters_default_off",
+    "openlands_contract_validator_pass",
+    "native_standalone_neoforge_artifacts_uploaded_with_sha256",
+    "launcher_install_update_repair_rollback_pass",
+    "first_hour_runtime_playtest_pass",
+    "waystone_state_save_load_pass",
+    "legal_content_audit_pass"
+  ],
+  "requiredPublicAlphaEvidence": [
+    "openlands_contract_validator_pass",
+    "native_standalone_neoforge_artifacts_uploaded_with_sha256",
+    "launcher_install_update_repair_rollback_pass",
+    "first_hour_runtime_playtest_pass",
+    "waystone_state_save_load_pass",
+    "legal_content_audit_pass"
+  ],
+  "adapterReadySignal": "openlands_runtime_ready",
+  "blockedBy": [
+    "real_runtime_adapter_boot_missing",
+    "runtime_smoke_test_missing",
+    "registry_parity_execution_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-adapter-boot-report.json",
+  "proofs": [
+    "adapter_load_plan_loaded",
+    "descriptor_identity_verified",
+    "runtime_target_accepted",
+    "adapter_phases_match_evidence_template",
+    "load_step_resources_exist_in_source",
+    "compiled_artifact_contains_load_step_resources",
+    "load_step_evidence_ids_resolve",
+    "adapter_ready_signal_declared",
+    "compiled_artifact_contains_runtime_contracts",
+    "public_alpha_blocked_until_real_adapter_boot"
+  ]
+}

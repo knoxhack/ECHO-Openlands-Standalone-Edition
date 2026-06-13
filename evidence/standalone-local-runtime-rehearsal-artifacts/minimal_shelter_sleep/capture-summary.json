@@ -1,0 +1,16 @@
+{
+  "fixtureHash": "fe90d7b5fee8cd373ae19f357d629a0a9a2739f535afba3309a9199ece502e3f",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "minimumForSleepMilestone": 55,
+  "shelterComponents": [
+    "roof_coverage",
+    "wall_enclosure",
+    "entry_closure",
+    "bedroll_present",
+    "light_or_fire",
+    "hostile_distance"
+  ],
+  "forgivingShelterProof": true,
+  "weakShelterProof": true
+}

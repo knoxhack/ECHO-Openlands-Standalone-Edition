@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "inventory_hotbar_placed_blocks_and_chests_roundtrip",
+    "bedroll_spawn_campfire_state_and_shelter_score_roundtrip",
+    "waystone_state_and_holomap_region_discovery_roundtrip",
+    "missing_field_fails_the_report"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "systems/builder_ux_alpha.json",
+    "exists": true,
+    "sha256": "db84d3dc722e7f22814abbbf1cdc2fcd6604f1836174a1bc00110c45cdbb210f"
+  },
+  {
+    "ref": "systems/coop_and_smp.json",
+    "exists": true,
+    "sha256": "0b7c0c5c34e2e5fa169eaa0942d788fb76d95300eea1998cc9bccd7fa0b34cd3"
+  }
+]

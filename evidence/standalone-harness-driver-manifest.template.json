@@ -1,0 +1,379 @@
+{
+  "schema": "echo.openlands.edition.harness_driver_manifest.v1",
+  "edition": "standalone",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "generatedAt": "2026-06-11T07:40:47.569Z",
+  "status": "template_blocked",
+  "harnessDriverManifestContract": "data/echoopenlandsprotocol/openlands/systems/harness_driver_manifest_contract.json",
+  "sourceContracts": {
+    "runtimeExecutionHarnessPlan": "systems/runtime_execution_harness_plan.json",
+    "launcherExecutionHarnessPlan": "systems/launcher_execution_harness_plan.json",
+    "finalReleaseReviewHarnessPlan": "systems/final_release_review_harness_plan.json",
+    "distributionApprovalHarnessPlan": "systems/distribution_approval_harness_plan.json",
+    "runtimeExecutionAcceptance": "systems/runtime_execution_acceptance.json",
+    "launcherExecutionAcceptance": "systems/launcher_execution_acceptance.json",
+    "finalReleaseReviewAcceptance": "systems/final_release_review_acceptance.json",
+    "distributionApprovalAcceptance": "systems/distribution_approval_acceptance.json"
+  },
+  "artifactPattern": "echoopenlandsprotocol-0.1.0-standalone.jar",
+  "harnessFamilies": [
+    {
+      "id": "runtime",
+      "plan": "systems/runtime_execution_harness_plan.json",
+      "bindingKey": "scenarioBindings",
+      "bindingLabel": "runtime scenarios",
+      "requiredReport": "evidence/standalone-runtime-execution-report.json",
+      "requiredDriverSurfaceIds": [
+        "world_driver",
+        "worldgen_driver",
+        "shelter_driver",
+        "route_driver",
+        "save_load_driver",
+        "creature_driver",
+        "waystone_driver",
+        "homestead_driver",
+        "builder_storage_driver",
+        "distribution_driver",
+        "launcher_driver",
+        "review_driver"
+      ],
+      "requiredBindingIds": [
+        "fresh_standard_world_starts",
+        "starter_spawn_seed_sweep",
+        "minimal_shelter_sleep",
+        "first_hour_route_walkthrough",
+        "first_hour_save_reload_roundtrip",
+        "biome_landmark_seed_sweep",
+        "creature_spawn_ai_drop_sound_sweep",
+        "waystone_repair_state_roundtrip",
+        "two_active_waystones_fast_travel",
+        "old_road_holomap_route_reveal",
+        "relaxed_homestead_growth_and_cookpot",
+        "animal_pen_and_trader_surplus",
+        "builder_hammer_scaffold_inventory_storage",
+        "artifact_upload_download_hash",
+        "launcher_install_update_repair_rollback",
+        "final_owned_asset_review",
+        "final_sound_and_branding_review"
+      ],
+      "availableDriverSurfaceIds": [],
+      "missingDriverSurfaceIds": [
+        "builder_storage_driver",
+        "creature_driver",
+        "distribution_driver",
+        "homestead_driver",
+        "launcher_driver",
+        "review_driver",
+        "route_driver",
+        "save_load_driver",
+        "shelter_driver",
+        "waystone_driver",
+        "world_driver",
+        "worldgen_driver"
+      ],
+      "status": "template_blocked",
+      "blockedBy": [
+        "real_runtime_harness_drivers_missing",
+        "real_harness_execution_not_run"
+      ]
+    },
+    {
+      "id": "launcher",
+      "plan": "systems/launcher_execution_harness_plan.json",
+      "bindingKey": "flowBindings",
+      "bindingLabel": "launcher flows",
+      "requiredReport": "evidence/standalone-launcher-execution-report.json",
+      "requiredDriverSurfaceIds": [
+        "launcher_channel_driver",
+        "manifest_driver",
+        "artifact_cache_driver",
+        "descriptor_driver",
+        "world_lifecycle_driver",
+        "state_preservation_driver",
+        "repair_driver",
+        "rollback_driver",
+        "launcher_log_driver"
+      ],
+      "requiredBindingIds": [
+        "install",
+        "update",
+        "repair",
+        "rollback"
+      ],
+      "availableDriverSurfaceIds": [],
+      "missingDriverSurfaceIds": [
+        "artifact_cache_driver",
+        "descriptor_driver",
+        "launcher_channel_driver",
+        "launcher_log_driver",
+        "manifest_driver",
+        "repair_driver",
+        "rollback_driver",
+        "state_preservation_driver",
+        "world_lifecycle_driver"
+      ],
+      "status": "template_blocked",
+      "blockedBy": [
+        "real_launcher_harness_drivers_missing",
+        "real_harness_execution_not_run"
+      ]
+    },
+    {
+      "id": "finalReview",
+      "plan": "systems/final_release_review_harness_plan.json",
+      "bindingKey": "reviewAreaBindings",
+      "bindingLabel": "final review areas",
+      "requiredReport": "evidence/standalone-final-release-review-report.json",
+      "requiredDriverSurfaceIds": [
+        "reviewer_identity_driver",
+        "public_text_policy_driver",
+        "asset_manifest_driver",
+        "legal_audit_driver",
+        "block_render_review_driver",
+        "item_render_review_driver",
+        "audio_source_review_driver",
+        "generated_output_audit_driver"
+      ],
+      "requiredBindingIds": [
+        "public_identity_and_branding",
+        "block_textures_models_and_blockstates",
+        "item_icons_models_and_tools",
+        "audio_sources_and_sound_events",
+        "generated_runtime_outputs"
+      ],
+      "availableDriverSurfaceIds": [],
+      "missingDriverSurfaceIds": [
+        "asset_manifest_driver",
+        "audio_source_review_driver",
+        "block_render_review_driver",
+        "generated_output_audit_driver",
+        "item_render_review_driver",
+        "legal_audit_driver",
+        "public_text_policy_driver",
+        "reviewer_identity_driver"
+      ],
+      "status": "template_blocked",
+      "blockedBy": [
+        "final_review_harness_drivers_missing",
+        "real_harness_execution_not_run"
+      ]
+    },
+    {
+      "id": "distributionApproval",
+      "plan": "systems/distribution_approval_harness_plan.json",
+      "bindingKey": "approvalAreaBindings",
+      "bindingLabel": "distribution approval areas",
+      "requiredReport": "evidence/standalone-distribution-approval-report.json",
+      "requiredDriverSurfaceIds": [
+        "release_index_publication_driver",
+        "artifact_download_verification_driver",
+        "edition_manifest_index_driver",
+        "dependency_gate_driver",
+        "coop_session_driver",
+        "approval_signature_driver",
+        "roadmap_scope_driver",
+        "rollback_plan_driver",
+        "report_artifact_driver"
+      ],
+      "requiredBindingIds": [
+        "artifact_publication",
+        "edition_manifest_indexing",
+        "runtime_launcher_final_review_dependency",
+        "coop_public_alpha_session",
+        "public_alpha_approval"
+      ],
+      "availableDriverSurfaceIds": [],
+      "missingDriverSurfaceIds": [
+        "approval_signature_driver",
+        "artifact_download_verification_driver",
+        "coop_session_driver",
+        "dependency_gate_driver",
+        "edition_manifest_index_driver",
+        "release_index_publication_driver",
+        "report_artifact_driver",
+        "roadmap_scope_driver",
+        "rollback_plan_driver"
+      ],
+      "status": "template_blocked",
+      "blockedBy": [
+        "distribution_approval_harness_drivers_missing",
+        "real_harness_execution_not_run"
+      ]
+    }
+  ],
+  "availableDriverSurfaces": [],
+  "missingDriverSurfaces": [
+    {
+      "harnessFamily": "runtime",
+      "id": "builder_storage_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "creature_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "distribution_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "homestead_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "launcher_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "review_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "route_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "save_load_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "shelter_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "waystone_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "world_driver"
+    },
+    {
+      "harnessFamily": "runtime",
+      "id": "worldgen_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "artifact_cache_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "descriptor_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "launcher_channel_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "launcher_log_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "manifest_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "repair_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "rollback_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "state_preservation_driver"
+    },
+    {
+      "harnessFamily": "launcher",
+      "id": "world_lifecycle_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "asset_manifest_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "audio_source_review_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "block_render_review_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "generated_output_audit_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "item_render_review_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "legal_audit_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "public_text_policy_driver"
+    },
+    {
+      "harnessFamily": "finalReview",
+      "id": "reviewer_identity_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "approval_signature_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "artifact_download_verification_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "coop_session_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "dependency_gate_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "edition_manifest_index_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "release_index_publication_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "report_artifact_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "roadmap_scope_driver"
+    },
+    {
+      "harnessFamily": "distributionApproval",
+      "id": "rollback_plan_driver"
+    }
+  ],
+  "blockedBy": [
+    "real_runtime_harness_drivers_missing",
+    "real_launcher_harness_drivers_missing",
+    "final_review_harness_drivers_missing",
+    "distribution_approval_harness_drivers_missing",
+    "real_harness_execution_not_run"
+  ],
+  "nextSteps": [
+    "Implement runtime-specific driver surfaces.",
+    "Record adapter entrypoints, driver versions, and adapter commits.",
+    "Attach required captures and saved artifacts from each harness plan.",
+    "Run real harness execution and replace blocked reports only after every mapped binding passes."
+  ],
+  "notes": [
+    "This template is intentionally blocked and generated from the source harness driver manifest contract.",
+    "Generated manifests must be validated before they are used by run-*harness.mjs."
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-harness-driver-manifest.template.json"
+}

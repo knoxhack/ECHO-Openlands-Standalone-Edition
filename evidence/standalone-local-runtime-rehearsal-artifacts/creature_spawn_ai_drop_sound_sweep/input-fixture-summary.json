@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "creatures/mvp_creatures.json",
+    "exists": true,
+    "sha256": "e47d964189d5db86786035a79db72c560be278df35f89b5baa945764c2f307e4"
+  },
+  {
+    "ref": "loot/mvp_loot.json",
+    "exists": true,
+    "sha256": "562ee04d8118a44cad9e2381373e0d268c697a5083d945331458f79b6d14d749"
+  },
+  {
+    "ref": "sounds/mvp_sound_contract.json",
+    "exists": true,
+    "sha256": "41376d09448d619b8e51d1f6ff06f3ba37486f00984fc9e10b3e54e0bb02559e"
+  }
+]

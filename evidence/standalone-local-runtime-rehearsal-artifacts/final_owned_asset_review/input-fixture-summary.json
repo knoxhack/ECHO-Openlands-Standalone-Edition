@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "assets/echoopenlandsprotocol/asset_manifest.json",
+    "exists": true,
+    "sha256": "7cd21d0ea59f672ada60028ca746d1b779b6f6e1aa56bba75bc9db462cf717a9"
+  },
+  {
+    "ref": "systems/legal_content_audit.json",
+    "exists": true,
+    "sha256": "d6024cc2aec22f22b1f170caef12c028da8b24032decc4e2f7f7c817be244371"
+  }
+]

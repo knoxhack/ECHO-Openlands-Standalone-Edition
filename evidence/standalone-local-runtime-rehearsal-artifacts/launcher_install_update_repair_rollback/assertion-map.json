@@ -1,0 +1,11 @@
+{
+  "assertions": [
+    "install_downloads_required_artifacts",
+    "update_preserves_worlds_and_configs",
+    "repair_restores_hashes",
+    "rollback_preserves_worlds",
+    "launcher_logs_include_success_for_each_flow"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

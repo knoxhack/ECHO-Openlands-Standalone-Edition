@@ -1,0 +1,19 @@
+{
+  "fixtureHash": "c9bef14d2af2735e4e4d4f3a3483ff12155eea4d8a009df14b87d7188c125146",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "toolIds": [
+    "echotoolcore:field_hammer"
+  ],
+  "temporaryBlockIds": [
+    "scaffold_bundle"
+  ],
+  "inventoryCommandIds": [
+    "quick_stack",
+    "quick_deposit",
+    "sort_inventory",
+    "craft_from_nearby_storage",
+    "named_chests"
+  ],
+  "serverAuthorityProof": true
+}

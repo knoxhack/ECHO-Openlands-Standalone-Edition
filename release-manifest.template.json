@@ -1,0 +1,114 @@
+{
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "sourceRepo": "knoxhack/ECHO-Openlands-Standalone-Edition",
+  "launcherFeed": "github-releases",
+  "runtimeTarget": "echo_runtime_standalone",
+  "loader": "echo-standalone-runtime",
+  "moduleArtifactFamily": "standalone",
+  "moduleArtifactPattern": "<module>-<version>-standalone.jar",
+  "moduleSourcePattern": "<module>-<version>-sources.jar",
+  "moduleRequirements": [
+    {
+      "id": "echocore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echonetcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoadaptercore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echocontentcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoworldcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echorecipecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echobiomecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echostructurecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echocreaturecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echofoundationcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echomaterialcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echotoolcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echostationcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echoworldstarter",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echocommonloot",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echocreatureroles",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echoprogressioncore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoassetcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoopenlandsprotocol",
+      "version": "0.1.0"
+    }
+  ],
+  "requiredModuleDescriptors": [
+    "META-INF/echo.mod.json"
+  ],
+  "optionalPackageDescriptors": [
+    "echo-addon-package.json"
+  ],
+  "requiredRuntimeEvidenceContract": "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+  "requiredAdapterLoadPhases": [
+    "discover",
+    "load_data",
+    "register_content",
+    "bind_worldgen",
+    "bind_gameplay_state",
+    "ready",
+    "release_gate"
+  ],
+  "requiredPublicAlphaEvidence": [
+    "openlands_contract_validator_pass",
+    "native_standalone_neoforge_artifacts_uploaded_with_sha256",
+    "launcher_install_update_repair_rollback_pass",
+    "first_hour_runtime_playtest_pass",
+    "waystone_state_save_load_pass",
+    "legal_content_audit_pass"
+  ],
+  "artifacts": []
+}

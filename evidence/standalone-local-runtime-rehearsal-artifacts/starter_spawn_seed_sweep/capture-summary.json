@@ -1,0 +1,20 @@
+{
+  "fixtureHash": "ac05c8dc9c70647feb09ceb3e7180e51ae3b64776eb4d0b1ba8e9653a478fcba",
+  "runtimeCoreProofCount": 15,
+  "moduleVersion": "0.1.0",
+  "sampleSeedCount": 3,
+  "allowedStarterBiomes": [
+    "meadows",
+    "woodlands"
+  ],
+  "guaranteedRadiusBlocks": 64,
+  "visibleLandmarkRadiusBlocks": 128,
+  "minimumHostileClearRadiusBlocks": 16,
+  "starterResources": [
+    "echomaterialcore:branchwood_stick",
+    "echomaterialcore:fieldstone_piece",
+    "echomaterialcore:reed_fiber",
+    "berries"
+  ],
+  "acceptedByPureRuntimeHook": true
+}

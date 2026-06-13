@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "all_four_mvp_biomes_generate",
+    "landmark_frequency_stays_inside_contract",
+    "old_road_and_ruin_hints_appear_on_holomap",
+    "biome_palettes_use_registered_blocks"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

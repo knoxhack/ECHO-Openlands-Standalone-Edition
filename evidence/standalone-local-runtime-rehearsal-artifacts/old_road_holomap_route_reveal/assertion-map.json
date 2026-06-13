@@ -1,0 +1,9 @@
+{
+  "assertions": [
+    "old_road_segment_records_on_holomap",
+    "route_binding_links_waystone_ids",
+    "nearby_hints_remain_visible_after_reload"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    "two_active_waystones_unlock_travel",
+    "one_active_waystone_does_not_unlock_travel",
+    "permission_decisions_match_owner_group_public_flags",
+    "travel_result_preserves_inventory_and_destination_state"
+  ],
+  "status": "preflight_passed",
+  "clearsRuntimeGates": false
+}

@@ -1,0 +1,251 @@
+{
+  "schema": "echo.openlands.edition.worldgen_exploration_report.v1",
+  "status": "preflight_passed",
+  "realRuntimeWorldgenRequiredBeforePublicAlpha": true,
+  "generatedAt": "2026-06-13T00:23:05.907Z",
+  "dryRun": false,
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "contracts": {
+    "biomes": "data/echoopenlandsprotocol/openlands/biomes/mvp_biomes.json",
+    "landmarks": "data/echoopenlandsprotocol/openlands/structures/mvp_landmarks.json",
+    "creatures": "data/echoopenlandsprotocol/openlands/creatures/mvp_creatures.json",
+    "holomap": "data/echoopenlandsprotocol/openlands/holomap/mvp_regions.json"
+  },
+  "artifact": {
+    "file": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "kind": "standalone",
+    "path": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+    "nestedRuntimeEntry": null,
+    "runtimeEntriesChecked": [
+      "data/echoopenlandsprotocol/openlands/biomes/mvp_biomes.json",
+      "data/echoopenlandsprotocol/openlands/structures/mvp_landmarks.json",
+      "data/echoopenlandsprotocol/openlands/creatures/mvp_creatures.json",
+      "data/echoopenlandsprotocol/openlands/holomap/mvp_regions.json",
+      "data/echoopenlandsprotocol/openlands/loot/mvp_loot.json",
+      "data/echoopenlandsprotocol/openlands/tutorials/first_hour_prompts.json",
+      "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+      "assets/echoopenlandsprotocol/sounds.json"
+    ]
+  },
+  "counts": {
+    "biomes": 4,
+    "landmarks": 8,
+    "creatures": 10,
+    "holomapLayers": 5,
+    "holomapHintTypes": 5,
+    "creatureSoundEvents": 34
+  },
+  "spawnSafety": {
+    "maximumUnsafeSpawnAttempts": 64,
+    "starterRadiusBlocks": 96,
+    "guarantees": [
+      "at least one wood source within 32 blocks",
+      "at least two loose stone nodes within 32 blocks",
+      "at least one fiber or reed patch within 48 blocks",
+      "at least one berries or mushroom source within 48 blocks",
+      "water within 96 blocks",
+      "one cave mouth, road fragment, or ruin silhouette within 128 blocks"
+    ]
+  },
+  "biomeSummaries": [
+    {
+      "id": "meadows",
+      "resourceCount": 6,
+      "spawnCount": 4,
+      "landmarkCount": 4,
+      "ambienceKeys": [
+        "day",
+        "night",
+        "musicHint"
+      ]
+    },
+    {
+      "id": "woodlands",
+      "resourceCount": 6,
+      "spawnCount": 4,
+      "landmarkCount": 4,
+      "ambienceKeys": [
+        "day",
+        "night",
+        "musicHint"
+      ]
+    },
+    {
+      "id": "stonehills",
+      "resourceCount": 6,
+      "spawnCount": 3,
+      "landmarkCount": 4,
+      "ambienceKeys": [
+        "day",
+        "night",
+        "musicHint"
+      ]
+    },
+    {
+      "id": "marshlands",
+      "resourceCount": 6,
+      "spawnCount": 4,
+      "landmarkCount": 4,
+      "ambienceKeys": [
+        "day",
+        "night",
+        "fog",
+        "musicHint"
+      ]
+    }
+  ],
+  "landmarkIds": [
+    "ruined_well",
+    "road_marker",
+    "tiny_camp",
+    "watchtower",
+    "old_mine",
+    "broken_bridge",
+    "cellar_entrance",
+    "broken_waystone_site"
+  ],
+  "creatureIds": [
+    "hare",
+    "deer",
+    "boar",
+    "goat",
+    "marsh_hen",
+    "fish",
+    "greyling",
+    "bristleback",
+    "hollow_stalker",
+    "mire_leech"
+  ],
+  "holomapLayers": [
+    "region_names",
+    "old_roads",
+    "waystones",
+    "nearby_hints",
+    "player_markers"
+  ],
+  "holomapHintTypes": [
+    "cave_mouth",
+    "old_mine",
+    "ruin",
+    "resource_patch",
+    "road_segment"
+  ],
+  "worldgenResourceMarkers": [
+    {
+      "source": "biome:woodlands:palette",
+      "resource": "branchwood"
+    },
+    {
+      "source": "biome:woodlands:palette",
+      "resource": "pine"
+    },
+    {
+      "source": "biome:stonehills:resourceSet",
+      "resource": "cave_mouth"
+    },
+    {
+      "source": "biome:stonehills:resourceSet",
+      "resource": "old_mine"
+    },
+    {
+      "source": "biome:marshlands:palette",
+      "resource": "reed_patch"
+    }
+  ],
+  "landmarkHoloMapHintMarkers": [
+    {
+      "landmark": "ruined_well",
+      "hint": "water_or_old_settlement"
+    },
+    {
+      "landmark": "road_marker",
+      "hint": "old_road_segment"
+    },
+    {
+      "landmark": "tiny_camp",
+      "hint": "traveler_cache"
+    },
+    {
+      "landmark": "watchtower",
+      "hint": "vantage_point"
+    },
+    {
+      "landmark": "old_mine",
+      "hint": "ore_and_cave"
+    },
+    {
+      "landmark": "broken_bridge",
+      "hint": "interrupted_road"
+    },
+    {
+      "landmark": "cellar_entrance",
+      "hint": "underground_room"
+    },
+    {
+      "landmark": "broken_waystone_site",
+      "hint": "broken_waystone"
+    }
+  ],
+  "nonPromptTutorialHooks": [
+    {
+      "landmark": "ruined_well",
+      "tutorialHook": "first_landmark_seen"
+    },
+    {
+      "landmark": "tiny_camp",
+      "tutorialHook": "first_camp_discovered"
+    },
+    {
+      "landmark": "watchtower",
+      "tutorialHook": "first_vantage_point"
+    },
+    {
+      "landmark": "old_mine",
+      "tutorialHook": "first_cave_or_mine"
+    },
+    {
+      "landmark": "broken_bridge",
+      "tutorialHook": "first_broken_bridge"
+    },
+    {
+      "landmark": "cellar_entrance",
+      "tutorialHook": "first_shelter_like_ruin"
+    }
+  ],
+  "worldgenLoadStep": {
+    "id": "bind_biomes_structures_creatures_and_spawn",
+    "successSignal": "openlands_worldgen_bound",
+    "requiredEvidence": [
+      "biome_palettes_bound",
+      "spawn_tables_bound",
+      "landmark_pools_bound",
+      "starter_spawn_guarantees_bound"
+    ]
+  },
+  "blockedBy": [
+    "real_runtime_worldgen_execution_missing",
+    "starter_spawn_seed_sweep_missing",
+    "landmark_generation_smoke_test_missing",
+    "creature_spawn_parity_test_missing",
+    "holomap_reveal_runtime_test_missing"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-worldgen-exploration-report.json",
+  "proofs": [
+    "biome_contract_loaded",
+    "landmark_contract_loaded",
+    "creature_contract_loaded",
+    "holomap_contract_loaded",
+    "starter_spawn_safety_declared",
+    "biome_palettes_and_resources_resolve",
+    "landmark_blocks_loot_and_biomes_resolve",
+    "creature_spawn_tables_and_sounds_resolve",
+    "holomap_layers_hints_and_region_fields_resolve",
+    "worldgen_semantic_markers_recorded",
+    "compiled_artifact_contains_worldgen_exploration_contracts",
+    "public_alpha_blocked_until_real_worldgen_execution"
+  ]
+}

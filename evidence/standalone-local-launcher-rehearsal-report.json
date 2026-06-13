@@ -1,0 +1,239 @@
+{
+  "schema": "echo.openlands.edition.local_launcher_rehearsal_report.v1",
+  "status": "preflight_passed",
+  "publicAlphaReady": false,
+  "clearsLauncherGates": false,
+  "rehearsalOnly": true,
+  "generatedAt": "2026-06-13T00:23:07.339Z",
+  "dryRun": false,
+  "edition": "standalone",
+  "packId": "openlands-standalone-edition",
+  "displayName": "Openlands Standalone Edition",
+  "runtimeTarget": "echo_runtime_standalone",
+  "moduleId": "echoopenlandsprotocol",
+  "moduleVersion": "0.1.0",
+  "releaseId": "openlands-0.1.0-compiled",
+  "releaseIndexPath": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echo-release.json",
+  "launcherFlowContract": "data/echoopenlandsprotocol/openlands/systems/launcher_flow_acceptance.json",
+  "launcherExecutionContract": "data/echoopenlandsprotocol/openlands/systems/launcher_execution_acceptance.json",
+  "moduleArtifact": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
+  "moduleArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+  "moduleArtifactSize": 298027,
+  "rehearsalRoot": "C:\\Users\\knox\\AppData\\Local\\Temp\\openlands-standalone-launcher-rehearsal-Iylp8H",
+  "savedArtifactRoot": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-local-launcher-rehearsal-artifacts",
+  "flowResults": [
+    {
+      "id": "install",
+      "status": "passed",
+      "startedAt": "2026-06-13T00:23:07.315Z",
+      "finishedAt": "2026-06-13T00:23:07.322Z",
+      "durationMs": 7,
+      "assertions": [
+        {
+          "id": "manifest_snapshot_written",
+          "status": "passed"
+        },
+        {
+          "id": "artifact_cached_from_local_release",
+          "status": "passed"
+        },
+        {
+          "id": "sha256_and_size_match_release_index",
+          "status": "passed"
+        },
+        {
+          "id": "artifact_descriptor_entries_present",
+          "status": "passed"
+        },
+        {
+          "id": "openlands_standard_config_created",
+          "status": "passed"
+        },
+        {
+          "id": "world_state_created_without_hardcore_meters",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "cachePath": "C:\\Users\\knox\\AppData\\Local\\Temp\\openlands-standalone-launcher-rehearsal-Iylp8H\\cache\\echoopenlandsprotocol-0.1.0-standalone.jar",
+        "cachedArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "cachedArtifactSize": 298027,
+        "artifactInspection": {
+          "requiredEntries": [
+            "META-INF/echo.mod.json"
+          ],
+          "nestedRuntimeJarPresent": null,
+          "entryCount": 368
+        },
+        "worldHash": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "configHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1"
+      },
+      "savedArtifacts": [
+        "install/launcher-install-log.txt",
+        "install/install-manifest.json",
+        "install/artifact-hash.txt",
+        "install/fresh-world-summary.json"
+      ]
+    },
+    {
+      "id": "update",
+      "status": "passed",
+      "startedAt": "2026-06-13T00:23:07.322Z",
+      "finishedAt": "2026-06-13T00:23:07.329Z",
+      "durationMs": 7,
+      "assertions": [
+        {
+          "id": "previous_manifest_snapshot_written",
+          "status": "passed"
+        },
+        {
+          "id": "updated_manifest_snapshot_written",
+          "status": "passed"
+        },
+        {
+          "id": "artifact_cache_replaced_from_current_release",
+          "status": "passed"
+        },
+        {
+          "id": "world_hash_preserved",
+          "status": "passed"
+        },
+        {
+          "id": "config_hash_preserved",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "previousManifestId": "openlands-0.1.0-compiled-previous-local-rehearsal",
+        "newManifestId": "openlands-0.1.0-compiled",
+        "beforeUpdateWorldHash": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "afterUpdateWorldHash": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "beforeUpdateConfigHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1",
+        "afterUpdateConfigHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1",
+        "changedArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "reusedArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146"
+      },
+      "savedArtifacts": [
+        "update/launcher-update-log.txt",
+        "update/previous-manifest.json",
+        "update/updated-manifest.json",
+        "update/world-preservation-diff.json",
+        "update/config-preservation-diff.json"
+      ]
+    },
+    {
+      "id": "repair",
+      "status": "passed",
+      "startedAt": "2026-06-13T00:23:07.329Z",
+      "finishedAt": "2026-06-13T00:23:07.334Z",
+      "durationMs": 5,
+      "assertions": [
+        {
+          "id": "corrupt_artifact_hash_differs",
+          "status": "passed"
+        },
+        {
+          "id": "artifact_restored_from_local_release",
+          "status": "passed"
+        },
+        {
+          "id": "restored_hash_matches_release_index",
+          "status": "passed"
+        },
+        {
+          "id": "world_hash_preserved_during_repair",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "corruptedArtifactPath": "C:\\Users\\knox\\AppData\\Local\\Temp\\openlands-standalone-launcher-rehearsal-Iylp8H\\cache\\echoopenlandsprotocol-0.1.0-standalone.jar",
+        "corruptSha256": "846781a10d498a9076cbc0ac7272cef0bcf89aa02ea5e61fecc30cc3e3926031",
+        "restoredSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "expectedSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "worldHashBeforeRepair": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "worldHashAfterRepair": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "repairDownloadUrl": "local-release-root"
+      },
+      "savedArtifacts": [
+        "repair/launcher-repair-log.txt",
+        "repair/repair-hash-report.json",
+        "repair/repair-preservation-report.json"
+      ]
+    },
+    {
+      "id": "rollback",
+      "status": "passed",
+      "startedAt": "2026-06-13T00:23:07.334Z",
+      "finishedAt": "2026-06-13T00:23:07.339Z",
+      "durationMs": 5,
+      "assertions": [
+        {
+          "id": "rollback_manifest_snapshot_written",
+          "status": "passed"
+        },
+        {
+          "id": "artifact_cache_restored_for_selected_manifest",
+          "status": "passed"
+        },
+        {
+          "id": "world_hash_preserved_during_rollback",
+          "status": "passed"
+        },
+        {
+          "id": "config_hash_available_after_rollback",
+          "status": "passed"
+        },
+        {
+          "id": "no_world_entries_deleted",
+          "status": "passed"
+        }
+      ],
+      "captures": {
+        "currentManifestId": "openlands-0.1.0-compiled",
+        "previousManifestId": "openlands-0.1.0-compiled-previous-local-rehearsal",
+        "rollbackArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+        "schemaCompatibilityDecision": "compatible_rehearsal_no_schema_change",
+        "worldHashBeforeRollback": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "worldHashAfterRollback": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+        "openlandsStandardConfigHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1",
+        "rollbackWorldDeletionCount": 0,
+        "repairWorldDeletionCount": 0
+      },
+      "savedArtifacts": [
+        "rollback/launcher-rollback-log.txt",
+        "rollback/rollback-manifest.json",
+        "rollback/world-preservation-diff.json",
+        "rollback/config-preservation-diff.json"
+      ]
+    }
+  ],
+  "preservedState": {
+    "installWorldHash": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+    "installConfigHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1",
+    "beforeUpdateWorldHash": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+    "afterUpdateWorldHash": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+    "beforeUpdateConfigHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1",
+    "afterUpdateConfigHash": "f4a539f192bbe9691598d31dfd61d7173563cd7cfeac887500a2b4fa1c95b3d1",
+    "worldHashBeforeRepair": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+    "worldHashAfterRepair": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+    "worldHashBeforeRollback": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985",
+    "worldHashAfterRollback": "d9412612014e5e36b9a4e6d01566eb6b481bb45e37dd949205ab410e85b5a985"
+  },
+  "blockedBy": [
+    "real_echo_launcher_execution_missing",
+    "public_release_download_urls_missing",
+    "local_rehearsal_does_not_clear_launcher_gates"
+  ],
+  "proofs": [
+    "local_release_index_loaded",
+    "compiled_artifact_cached",
+    "artifact_sha256_and_size_match_release_index",
+    "artifact_descriptor_entries_present",
+    "openlands_standard_config_preserved",
+    "world_state_preserved_across_update_repair_rollback",
+    "corrupt_artifact_repaired_from_release_root",
+    "rollback_manifest_snapshot_written",
+    "public_alpha_stays_blocked_until_real_launcher_execution"
+  ],
+  "outputPath": "C:\\Development\\Github\\ECHO-Openlands-Standalone-Edition\\evidence\\standalone-local-launcher-rehearsal-report.json"
+}

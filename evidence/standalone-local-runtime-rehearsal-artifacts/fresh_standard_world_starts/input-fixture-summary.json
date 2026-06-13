@@ -1,0 +1,12 @@
+[
+  {
+    "ref": "config/game_modes.json",
+    "exists": true,
+    "sha256": "18c69820c057d5b0954bc323d1c153618db84425237039aa0d1c98c654cc11c5"
+  },
+  {
+    "ref": "systems/playable_runtime_contract.json",
+    "exists": true,
+    "sha256": "998211eaefad9661b1ce95153c16b35dba1c1141c2f9a92f9fecf7a7dfcae974"
+  }
+]
