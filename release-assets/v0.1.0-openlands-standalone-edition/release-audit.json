@@ -23,18 +23,18 @@
     },
     {
       "name": "openlands-standalone-edition-experimental-0.1.0.pack.json",
-      "size": 4664,
-      "sha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0"
+      "size": 19346,
+      "sha256": "1deadabade3d9c68763561b76dc507b5b9eda5a09736109feb5d839cb44c7b62"
     },
     {
       "name": "checksums.txt",
       "size": 313,
-      "sha256": "b6f7952ad8d07eee1496350823bee6992c7c99b767a5ec320664565a49b7ef18"
+      "sha256": "bb9bc70e3c4735b619e89b0eb4636c9db62d45da665790c8d3bf83a90a178f78"
     },
     {
       "name": "echo-release.json",
-      "size": 2130,
-      "sha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8"
+      "size": 2131,
+      "sha256": "be582431818769271967dad01070cfdea1c12e8d5f63eba3be062538bc80cc4c"
     }
   ],
   "zip": {
@@ -61,20 +61,20 @@
     },
     {
       "file": "openlands-standalone-edition-experimental-0.1.0.pack.json",
-      "expectedSha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0",
-      "actualSha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0",
+      "expectedSha256": "1deadabade3d9c68763561b76dc507b5b9eda5a09736109feb5d839cb44c7b62",
+      "actualSha256": "1deadabade3d9c68763561b76dc507b5b9eda5a09736109feb5d839cb44c7b62",
       "coveredBy": "release-asset-file",
       "matchedPath": "openlands-standalone-edition-experimental-0.1.0.pack.json",
-      "size": 4664,
+      "size": 19346,
       "ok": true
     },
     {
       "file": "echo-release.json",
-      "expectedSha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8",
-      "actualSha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8",
+      "expectedSha256": "be582431818769271967dad01070cfdea1c12e8d5f63eba3be062538bc80cc4c",
+      "actualSha256": "be582431818769271967dad01070cfdea1c12e8d5f63eba3be062538bc80cc4c",
       "coveredBy": "release-asset-file",
       "matchedPath": "echo-release.json",
-      "size": 2130,
+      "size": 2131,
       "ok": true
     }
   ],

@@ -6,7 +6,7 @@
   "channel": "experimental",
   "releasedAt": "2026-06-13T07:14:52.103Z",
   "manifestAsset": "openlands-standalone-edition-experimental-0.1.0.pack.json",
-  "manifestSha256": "d1f881cbc9d39e5724ec2bc353df8bba0c127b53fb04f500d44973168d6caa64",
+  "manifestSha256": "1deadabade3d9c68763561b76dc507b5b9eda5a09736109feb5d839cb44c7b62",
   "artifactMode": "zip",
   "artifactAsset": "openlands-standalone-edition-0.1.0.zip",
   "artifactSha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858",
@@ -25,8 +25,8 @@
     {
       "name": "openlands-standalone-edition-experimental-0.1.0.pack.json",
       "role": "pack-manifest",
-      "sha256": "d1f881cbc9d39e5724ec2bc353df8bba0c127b53fb04f500d44973168d6caa64",
-      "size": 4866
+      "sha256": "1deadabade3d9c68763561b76dc507b5b9eda5a09736109feb5d839cb44c7b62",
+      "size": 19346
     },
     {
       "name": "openlands-standalone-edition-0.1.0.zip",

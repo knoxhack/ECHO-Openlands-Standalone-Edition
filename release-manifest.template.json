@@ -11,119 +11,465 @@
   "moduleRequirements": [
     {
       "id": "echoadaptercore",
-      "version": ">=1.0.0"
+      "moduleId": "echoadaptercore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoadaptercore-1.0.0-standalone.jar",
+      "artifactName": "echoadaptercore-1.0.0-standalone.jar",
+      "path": "mods/echoadaptercore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoassetcore",
-      "version": ">=1.0.0"
+      "moduleId": "echoassetcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoassetcore-1.0.0-standalone.jar",
+      "artifactName": "echoassetcore-1.0.0-standalone.jar",
+      "path": "mods/echoassetcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echobiomecore",
-      "version": ">=1.0.0"
+      "moduleId": "echobiomecore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echobiomecore-1.0.0-standalone.jar",
+      "artifactName": "echobiomecore-1.0.0-standalone.jar",
+      "path": "mods/echobiomecore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoblockworks",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echoblockworks",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoblockworks-1.0.0-standalone.jar",
+      "artifactName": "echoblockworks-1.0.0-standalone.jar",
+      "path": "mods/echoblockworks-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echocommonloot",
-      "version": ">=0.1.0"
+      "moduleId": "echocommonloot",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echocommonloot-0.1.0-standalone.jar",
+      "artifactName": "echocommonloot-0.1.0-standalone.jar",
+      "path": "mods/echocommonloot-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echocontentcore",
-      "version": ">=1.0.0"
+      "moduleId": "echocontentcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echocontentcore-1.0.0-standalone.jar",
+      "artifactName": "echocontentcore-1.0.0-standalone.jar",
+      "path": "mods/echocontentcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echocore",
-      "version": ">=1.0.0"
+      "moduleId": "echocore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echocore-1.0.0-standalone.jar",
+      "artifactName": "echocore-1.0.0-standalone.jar",
+      "path": "mods/echocore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echocreaturecore",
-      "version": ">=1.0.0"
+      "moduleId": "echocreaturecore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echocreaturecore-1.0.0-standalone.jar",
+      "artifactName": "echocreaturecore-1.0.0-standalone.jar",
+      "path": "mods/echocreaturecore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echocreatureroles",
-      "version": ">=0.1.0"
+      "moduleId": "echocreatureroles",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echocreatureroles-0.1.0-standalone.jar",
+      "artifactName": "echocreatureroles-0.1.0-standalone.jar",
+      "path": "mods/echocreatureroles-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echoeconomycore",
+      "moduleId": "echoeconomycore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoeconomycore-1.0.0-standalone.jar",
+      "artifactName": "echoeconomycore-1.0.0-standalone.jar",
+      "path": "mods/echoeconomycore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echofoundationcore",
-      "version": ">=0.1.0"
+      "moduleId": "echofoundationcore",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echofoundationcore-0.1.0-standalone.jar",
+      "artifactName": "echofoundationcore-0.1.0-standalone.jar",
+      "path": "mods/echofoundationcore-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echohealthcore",
+      "moduleId": "echohealthcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echohealthcore-1.0.0-standalone.jar",
+      "artifactName": "echohealthcore-1.0.0-standalone.jar",
+      "path": "mods/echohealthcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoholomap",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echoholomap",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoholomap-1.0.0-standalone.jar",
+      "artifactName": "echoholomap-1.0.0-standalone.jar",
+      "path": "mods/echoholomap-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echohudcore",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echohudcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echohudcore-1.0.0-standalone.jar",
+      "artifactName": "echohudcore-1.0.0-standalone.jar",
+      "path": "mods/echohudcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoindex",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echoindex",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoindex-1.0.0-standalone.jar",
+      "artifactName": "echoindex-1.0.0-standalone.jar",
+      "path": "mods/echoindex-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echolens",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echolens",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echolens-1.0.0-standalone.jar",
+      "artifactName": "echolens-1.0.0-standalone.jar",
+      "path": "mods/echolens-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echolootcore",
+      "moduleId": "echolootcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echolootcore-1.0.0-standalone.jar",
+      "artifactName": "echolootcore-1.0.0-standalone.jar",
+      "path": "mods/echolootcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echomaterialcore",
-      "version": ">=0.1.0"
+      "moduleId": "echomaterialcore",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echomaterialcore-0.1.0-standalone.jar",
+      "artifactName": "echomaterialcore-0.1.0-standalone.jar",
+      "path": "mods/echomaterialcore-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echomissioncore",
+      "moduleId": "echomissioncore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echomissioncore-1.0.0-standalone.jar",
+      "artifactName": "echomissioncore-1.0.0-standalone.jar",
+      "path": "mods/echomissioncore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echonetcore",
-      "version": ">=1.0.0"
+      "moduleId": "echonetcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echonetcore-1.0.0-standalone.jar",
+      "artifactName": "echonetcore-1.0.0-standalone.jar",
+      "path": "mods/echonetcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echonpcore",
+      "moduleId": "echonpcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echonpcore-1.0.0-standalone.jar",
+      "artifactName": "echonpcore-1.0.0-standalone.jar",
+      "path": "mods/echonpcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoopenlandsprotocol",
-      "version": "0.1.0"
+      "moduleId": "echoopenlandsprotocol",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "artifactName": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "path": "mods/echoopenlandsprotocol-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echoplatformcore",
+      "moduleId": "echoplatformcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoplatformcore-1.0.0-standalone.jar",
+      "artifactName": "echoplatformcore-1.0.0-standalone.jar",
+      "path": "mods/echoplatformcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echoplayercore",
+      "moduleId": "echoplayercore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoplayercore-1.0.0-standalone.jar",
+      "artifactName": "echoplayercore-1.0.0-standalone.jar",
+      "path": "mods/echoplayercore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoprogressioncore",
-      "version": ">=1.0.0"
+      "moduleId": "echoprogressioncore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoprogressioncore-1.0.0-standalone.jar",
+      "artifactName": "echoprogressioncore-1.0.0-standalone.jar",
+      "path": "mods/echoprogressioncore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echorecipecore",
-      "version": ">=1.0.0"
+      "moduleId": "echorecipecore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echorecipecore-1.0.0-standalone.jar",
+      "artifactName": "echorecipecore-1.0.0-standalone.jar",
+      "path": "mods/echorecipecore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echorecovery",
+      "moduleId": "echorecovery",
+      "version": "1.3.0",
+      "artifactFamily": "standalone",
+      "assetName": "echorecovery-1.3.0-standalone.jar",
+      "artifactName": "echorecovery-1.3.0-standalone.jar",
+      "path": "mods/echorecovery-1.3.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echoruntimeguard",
+      "moduleId": "echoruntimeguard",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoruntimeguard-1.0.0-standalone.jar",
+      "artifactName": "echoruntimeguard-1.0.0-standalone.jar",
+      "path": "mods/echoruntimeguard-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echoschemacore",
+      "moduleId": "echoschemacore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoschemacore-1.0.0-standalone.jar",
+      "artifactName": "echoschemacore-1.0.0-standalone.jar",
+      "path": "mods/echoschemacore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoscreencore",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echoscreencore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoscreencore-1.0.0-standalone.jar",
+      "artifactName": "echoscreencore-1.0.0-standalone.jar",
+      "path": "mods/echoscreencore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echosocialcore",
+      "moduleId": "echosocialcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echosocialcore-1.0.0-standalone.jar",
+      "artifactName": "echosocialcore-1.0.0-standalone.jar",
+      "path": "mods/echosocialcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echosoundcore",
+      "moduleId": "echosoundcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echosoundcore-1.0.0-standalone.jar",
+      "artifactName": "echosoundcore-1.0.0-standalone.jar",
+      "path": "mods/echosoundcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echostationcore",
-      "version": ">=0.1.0"
+      "moduleId": "echostationcore",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echostationcore-0.1.0-standalone.jar",
+      "artifactName": "echostationcore-0.1.0-standalone.jar",
+      "path": "mods/echostationcore-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echostructurecore",
-      "version": ">=1.0.0"
+      "moduleId": "echostructurecore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echostructurecore-1.0.0-standalone.jar",
+      "artifactName": "echostructurecore-1.0.0-standalone.jar",
+      "path": "mods/echostructurecore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoterminal",
-      "version": ">=1.0.0",
-      "required": true
+      "moduleId": "echoterminal",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoterminal-1.0.0-standalone.jar",
+      "artifactName": "echoterminal-1.0.0-standalone.jar",
+      "path": "mods/echoterminal-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echothemecore",
-      "version": ">=1.3.0",
-      "required": true
+      "moduleId": "echothemecore",
+      "version": "1.3.0",
+      "artifactFamily": "standalone",
+      "assetName": "echothemecore-1.3.0-standalone.jar",
+      "artifactName": "echothemecore-1.3.0-standalone.jar",
+      "path": "mods/echothemecore-1.3.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echotoolcore",
-      "version": ">=0.1.0"
+      "moduleId": "echotoolcore",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echotoolcore-0.1.0-standalone.jar",
+      "artifactName": "echotoolcore-0.1.0-standalone.jar",
+      "path": "mods/echotoolcore-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echotutorialcore",
+      "moduleId": "echotutorialcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echotutorialcore-1.0.0-standalone.jar",
+      "artifactName": "echotutorialcore-1.0.0-standalone.jar",
+      "path": "mods/echotutorialcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echovalidationcore",
+      "moduleId": "echovalidationcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echovalidationcore-1.0.0-standalone.jar",
+      "artifactName": "echovalidationcore-1.0.0-standalone.jar",
+      "path": "mods/echovalidationcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
+    },
+    {
+      "id": "echoweathercore",
+      "moduleId": "echoweathercore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoweathercore-1.0.0-standalone.jar",
+      "artifactName": "echoweathercore-1.0.0-standalone.jar",
+      "path": "mods/echoweathercore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoworldcore",
-      "version": ">=1.0.0"
+      "moduleId": "echoworldcore",
+      "version": "1.0.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoworldcore-1.0.0-standalone.jar",
+      "artifactName": "echoworldcore-1.0.0-standalone.jar",
+      "path": "mods/echoworldcore-1.0.0-standalone.jar",
+      "required": true,
+      "side": "both"
     },
     {
       "id": "echoworldstarter",
-      "version": ">=0.1.0"
+      "moduleId": "echoworldstarter",
+      "version": "0.1.0",
+      "artifactFamily": "standalone",
+      "assetName": "echoworldstarter-0.1.0-standalone.jar",
+      "artifactName": "echoworldstarter-0.1.0-standalone.jar",
+      "path": "mods/echoworldstarter-0.1.0-standalone.jar",
+      "required": true,
+      "side": "both"
     }
   ],
   "requiredModuleDescriptors": [
@@ -166,8 +512,8 @@
       "role": "pack-manifest",
       "file": "openlands-standalone-edition-experimental-0.1.0.pack.json",
       "path": "release-assets/v0.1.0-openlands-standalone-edition/openlands-standalone-edition-experimental-0.1.0.pack.json",
-      "size": 4664,
-      "sha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0",
+      "size": 19346,
+      "sha256": "1deadabade3d9c68763561b76dc507b5b9eda5a09736109feb5d839cb44c7b62",
       "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
       "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
       "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/openlands-standalone-edition-experimental-0.1.0.pack.json",
@@ -178,7 +524,7 @@
       "file": "checksums.txt",
       "path": "release-assets/v0.1.0-openlands-standalone-edition/checksums.txt",
       "size": 313,
-      "sha256": "b6f7952ad8d07eee1496350823bee6992c7c99b767a5ec320664565a49b7ef18",
+      "sha256": "bb9bc70e3c4735b619e89b0eb4636c9db62d45da665790c8d3bf83a90a178f78",
       "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
       "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
       "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/checksums.txt",
@@ -188,8 +534,8 @@
       "role": "echo-release",
       "file": "echo-release.json",
       "path": "release-assets/v0.1.0-openlands-standalone-edition/echo-release.json",
-      "size": 2130,
-      "sha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8",
+      "size": 2131,
+      "sha256": "be582431818769271967dad01070cfdea1c12e8d5f63eba3be062538bc80cc4c",
       "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
       "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
       "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/echo-release.json",
