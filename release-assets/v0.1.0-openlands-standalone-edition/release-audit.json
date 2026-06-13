@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-13T07:14:52.103Z",
+  "repository": "knoxhack/ECHO-Openlands-Standalone-Edition",
+  "releaseTag": "v0.1.0-openlands-standalone-edition",
+  "status": "verified-prerelease-assets",
+  "releaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
+  "assetDirectory": "release-assets/v0.1.0-openlands-standalone-edition",
+  "uploadedReleaseAssets": [
+    "openlands-standalone-edition-0.1.0.zip",
+    "openlands-standalone-edition-experimental-0.1.0.pack.json",
+    "checksums.txt",
+    "echo-release.json"
+  ],
+  "sidecarAssets": [
+    "release-audit.json"
+  ],
+  "assets": [
+    {
+      "name": "openlands-standalone-edition-0.1.0.zip",
+      "size": 211769,
+      "sha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858"
+    },
+    {
+      "name": "openlands-standalone-edition-experimental-0.1.0.pack.json",
+      "size": 4664,
+      "sha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0"
+    },
+    {
+      "name": "checksums.txt",
+      "size": 313,
+      "sha256": "b6f7952ad8d07eee1496350823bee6992c7c99b767a5ec320664565a49b7ef18"
+    },
+    {
+      "name": "echo-release.json",
+      "size": 2130,
+      "sha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8"
+    }
+  ],
+  "zip": {
+    "file": "openlands-standalone-edition-0.1.0.zip",
+    "entries": 4,
+    "sha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858"
+  },
+  "checksumCoverage": {
+    "total": 3,
+    "releaseAssetFiles": 3,
+    "zipEntries": 0,
+    "missing": 0,
+    "mismatched": 0
+  },
+  "checksumEntries": [
+    {
+      "file": "openlands-standalone-edition-0.1.0.zip",
+      "expectedSha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858",
+      "actualSha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858",
+      "coveredBy": "release-asset-file",
+      "matchedPath": "openlands-standalone-edition-0.1.0.zip",
+      "size": 211769,
+      "ok": true
+    },
+    {
+      "file": "openlands-standalone-edition-experimental-0.1.0.pack.json",
+      "expectedSha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0",
+      "actualSha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0",
+      "coveredBy": "release-asset-file",
+      "matchedPath": "openlands-standalone-edition-experimental-0.1.0.pack.json",
+      "size": 4664,
+      "ok": true
+    },
+    {
+      "file": "echo-release.json",
+      "expectedSha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8",
+      "actualSha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8",
+      "coveredBy": "release-asset-file",
+      "matchedPath": "echo-release.json",
+      "size": 2130,
+      "ok": true
+    }
+  ],
+  "missingChecksumEntries": [],
+  "mismatchedChecksumEntries": []
+}

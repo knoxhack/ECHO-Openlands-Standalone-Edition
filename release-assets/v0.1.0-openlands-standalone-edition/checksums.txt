@@ -1,0 +1,3 @@
+47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858  openlands-standalone-edition-0.1.0.zip
+d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0  openlands-standalone-edition-experimental-0.1.0.pack.json
+f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8  echo-release.json

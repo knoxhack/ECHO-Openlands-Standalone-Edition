@@ -20,3 +20,11 @@ Implementation foundation only. This repo must stay preview-only until the stand
 - `manifests/modpack-index-entry.preview.json`
 
 These files are checked in for repo visibility and handoff review only. They are not approved player-facing release artifacts.
+
+## Release Assets
+
+- GitHub prerelease tag: `v0.1.0-openlands-standalone-edition`
+- Checked-in payloads: `release-assets/v0.1.0-openlands-standalone-edition/`
+- Uploaded assets: `openlands-standalone-edition-0.1.0.zip`, `openlands-standalone-edition-experimental-0.1.0.pack.json`, `checksums.txt`, `echo-release.json`
+
+These prerelease assets are checksum-backed handoff artifacts. Keep Release Index validation in warning until the remaining Openlands public-alpha gates pass.

@@ -110,5 +110,50 @@
     "waystone_state_save_load_pass",
     "legal_content_audit_pass"
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "role": "pack-archive",
+      "file": "openlands-standalone-edition-0.1.0.zip",
+      "path": "release-assets/v0.1.0-openlands-standalone-edition/openlands-standalone-edition-0.1.0.zip",
+      "size": 211769,
+      "sha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858",
+      "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
+      "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
+      "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/openlands-standalone-edition-0.1.0.zip",
+      "lfs": true
+    },
+    {
+      "role": "pack-manifest",
+      "file": "openlands-standalone-edition-experimental-0.1.0.pack.json",
+      "path": "release-assets/v0.1.0-openlands-standalone-edition/openlands-standalone-edition-experimental-0.1.0.pack.json",
+      "size": 4664,
+      "sha256": "d11aacaac2753770b619e1e1fc6d6e59af6e7049baca548e04234f5fc77635c0",
+      "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
+      "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
+      "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/openlands-standalone-edition-experimental-0.1.0.pack.json",
+      "lfs": false
+    },
+    {
+      "role": "checksums",
+      "file": "checksums.txt",
+      "path": "release-assets/v0.1.0-openlands-standalone-edition/checksums.txt",
+      "size": 313,
+      "sha256": "b6f7952ad8d07eee1496350823bee6992c7c99b767a5ec320664565a49b7ef18",
+      "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
+      "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
+      "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/checksums.txt",
+      "lfs": false
+    },
+    {
+      "role": "echo-release",
+      "file": "echo-release.json",
+      "path": "release-assets/v0.1.0-openlands-standalone-edition/echo-release.json",
+      "size": 2130,
+      "sha256": "f4e56b8fff4406ad5a770ba01fbf7ae4f02edd6b4134c3f5b1896002870a8ec8",
+      "sourceReleaseTag": "v0.1.0-openlands-standalone-edition",
+      "sourceReleaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
+      "downloadUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/download/v0.1.0-openlands-standalone-edition/echo-release.json",
+      "lfs": false
+    }
+  ]
 }

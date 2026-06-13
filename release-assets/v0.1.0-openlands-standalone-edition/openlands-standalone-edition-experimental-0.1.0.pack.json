@@ -1,0 +1,169 @@
+{
+  "pack": "openlands-standalone-edition",
+  "name": "Openlands Standalone Edition",
+  "version": "0.1.0",
+  "channel": "experimental",
+  "artifactMode": "zip",
+  "artifactName": "openlands-standalone-edition-0.1.0.zip",
+  "runtimeTarget": "echo_runtime_standalone",
+  "loader": "echo-standalone-runtime",
+  "moduleArtifactFamily": "standalone",
+  "moduleRequirements": [
+    {
+      "id": "echocore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echonetcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoadaptercore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echocontentcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoworldcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echorecipecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echobiomecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echostructurecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echocreaturecore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echofoundationcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echomaterialcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echotoolcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echostationcore",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echoworldstarter",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echocommonloot",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echocreatureroles",
+      "version": ">=0.1.0"
+    },
+    {
+      "id": "echoprogressioncore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoassetcore",
+      "version": ">=1.0.0"
+    },
+    {
+      "id": "echoopenlandsprotocol",
+      "version": "0.1.0"
+    }
+  ],
+  "requiredModuleDescriptors": [
+    "META-INF/echo.mod.json"
+  ],
+  "optionalPackageDescriptors": [
+    "echo-addon-package.json"
+  ],
+  "requiredRuntimeEvidenceContract": "data/echoopenlandsprotocol/openlands/systems/runtime_adapter_load_plan.json",
+  "requiredAdapterLoadPhases": [
+    "discover",
+    "load_data",
+    "register_content",
+    "bind_worldgen",
+    "bind_gameplay_state",
+    "ready",
+    "release_gate"
+  ],
+  "requiredPublicAlphaEvidence": [
+    "openlands_contract_validator_pass",
+    "native_standalone_neoforge_artifacts_uploaded_with_sha256",
+    "launcher_install_update_repair_rollback_pass",
+    "first_hour_runtime_playtest_pass",
+    "waystone_state_save_load_pass",
+    "legal_content_audit_pass"
+  ],
+  "dependencyResolution": "release-index",
+  "moduleResolutionNote": "Only echoopenlandsprotocol is bundled in this prerelease pack archive. Shared ECHO platform requirements remain release-index resolved until the full public-alpha gate clears.",
+  "files": [
+    {
+      "path": "mods/echoopenlandsprotocol-0.1.0-standalone.jar",
+      "assetName": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "artifactName": "echoopenlandsprotocol-0.1.0-standalone.jar",
+      "sha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
+      "size": 289541,
+      "required": true,
+      "moduleId": "echoopenlandsprotocol",
+      "side": "both"
+    }
+  ],
+  "modules": [
+    "echocore",
+    "echonetcore",
+    "echoadaptercore",
+    "echocontentcore",
+    "echoworldcore",
+    "echorecipecore",
+    "echobiomecore",
+    "echostructurecore",
+    "echocreaturecore",
+    "echofoundationcore",
+    "echomaterialcore",
+    "echotoolcore",
+    "echostationcore",
+    "echoworldstarter",
+    "echocommonloot",
+    "echocreatureroles",
+    "echoprogressioncore",
+    "echoassetcore",
+    "echoopenlandsprotocol"
+  ],
+  "changelog": [
+    "Openlands Standalone Edition experimental prerelease assembled from the compiled echoopenlandsprotocol Standalone artifact.",
+    "This is a checksum-backed prerelease handoff. Keep public-alpha validation in warning until the remaining launcher, playtest, save/load, and legal gates pass."
+  ],
+  "publicAlphaReady": false,
+  "releaseGate": {
+    "status": "warning",
+    "reason": "Checksum-backed prerelease assets exist, but Openlands public-alpha readiness gates remain blocked.",
+    "blockers": [
+      "real_launcher_channel_index_missing",
+      "real_launcher_execution_missing",
+      "distribution_approval_missing",
+      "first_hour_runtime_playtest_missing",
+      "waystone_state_save_load_missing",
+      "legal_content_audit_missing"
+    ]
+  },
+  "artifactSha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858",
+  "artifactSize": 211769,
+  "releaseTag": "v0.1.0-openlands-standalone-edition",
+  "releaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition"
+}
