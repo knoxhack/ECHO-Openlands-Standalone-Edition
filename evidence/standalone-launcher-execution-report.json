@@ -1,7 +1,7 @@
 {
   "schema": "echo.openlands.edition.launcher_execution_report.v1",
   "status": "blocked",
-  "generatedAt": "2026-06-13T00:23:07.523Z",
+  "generatedAt": "2026-06-13T06:55:10.710Z",
   "generatedBy": "generate-openlands-launcher-execution-report.mjs",
   "edition": "standalone",
   "packId": "openlands-standalone-edition",
@@ -9,7 +9,7 @@
   "moduleId": "echoopenlandsprotocol",
   "moduleVersion": "0.1.0",
   "moduleArtifact": "C:\\Development\\Github\\ECHO-Modules\\dist\\echo-module-release\\echoopenlandsprotocol\\echoopenlandsprotocol-0.1.0-standalone.jar",
-  "moduleArtifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+  "moduleArtifactSha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
   "launcherBuild": {
     "status": "not_executed",
     "source": "blocked_report_generator",
@@ -23,11 +23,11 @@
     {
       "id": "install",
       "status": "blocked",
-      "startedAt": "2026-06-13T00:23:07.523Z",
-      "finishedAt": "2026-06-13T00:23:07.523Z",
+      "startedAt": "2026-06-13T06:55:10.710Z",
+      "finishedAt": "2026-06-13T06:55:10.710Z",
       "durationMs": 0,
       "runtimeTarget": "echo_runtime_standalone",
-      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "artifactSha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
       "inputFixtureRefs": [
         "systems/launcher_flow_acceptance.json",
         "systems/distribution_alpha_gates.json",
@@ -108,11 +108,11 @@
     {
       "id": "update",
       "status": "blocked",
-      "startedAt": "2026-06-13T00:23:07.523Z",
-      "finishedAt": "2026-06-13T00:23:07.523Z",
+      "startedAt": "2026-06-13T06:55:10.710Z",
+      "finishedAt": "2026-06-13T06:55:10.710Z",
       "durationMs": 0,
       "runtimeTarget": "echo_runtime_standalone",
-      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "artifactSha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
       "inputFixtureRefs": [
         "systems/launcher_flow_acceptance.json",
         "systems/distribution_alpha_gates.json",
@@ -194,11 +194,11 @@
     {
       "id": "repair",
       "status": "blocked",
-      "startedAt": "2026-06-13T00:23:07.523Z",
-      "finishedAt": "2026-06-13T00:23:07.523Z",
+      "startedAt": "2026-06-13T06:55:10.710Z",
+      "finishedAt": "2026-06-13T06:55:10.710Z",
       "durationMs": 0,
       "runtimeTarget": "echo_runtime_standalone",
-      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "artifactSha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
       "inputFixtureRefs": [
         "systems/launcher_flow_acceptance.json",
         "systems/distribution_alpha_gates.json",
@@ -279,11 +279,11 @@
     {
       "id": "rollback",
       "status": "blocked",
-      "startedAt": "2026-06-13T00:23:07.523Z",
-      "finishedAt": "2026-06-13T00:23:07.523Z",
+      "startedAt": "2026-06-13T06:55:10.710Z",
+      "finishedAt": "2026-06-13T06:55:10.710Z",
       "durationMs": 0,
       "runtimeTarget": "echo_runtime_standalone",
-      "artifactSha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
+      "artifactSha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
       "inputFixtureRefs": [
         "systems/launcher_flow_acceptance.json",
         "systems/distribution_alpha_gates.json",

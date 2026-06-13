@@ -2,7 +2,7 @@
   "schema": "echo.openlands.edition.old_road_network_report.v1",
   "status": "preflight_passed",
   "realRuntimeOldRoadNetworkRequiredBeforePublicAlpha": true,
-  "generatedAt": "2026-06-13T00:23:06.238Z",
+  "generatedAt": "2026-06-13T06:55:11.285Z",
   "dryRun": false,
   "packId": "openlands-standalone-edition",
   "displayName": "Openlands Standalone Edition",

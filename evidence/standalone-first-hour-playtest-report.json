@@ -2,7 +2,7 @@
   "schema": "echo.openlands.edition.first_hour_playtest_report.v1",
   "status": "preflight_passed",
   "realRuntimePlaytestRequiredBeforePublicAlpha": true,
-  "generatedAt": "2026-06-13T00:23:06.530Z",
+  "generatedAt": "2026-06-13T06:55:10.638Z",
   "dryRun": false,
   "packId": "openlands-standalone-edition",
   "displayName": "Openlands Standalone Edition",

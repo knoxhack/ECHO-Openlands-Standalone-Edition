@@ -2,7 +2,7 @@
   "schema": "echo.openlands.edition.crafting_station_report.v1",
   "status": "preflight_passed",
   "realRuntimeStationExecutionRequiredBeforePublicAlpha": true,
-  "generatedAt": "2026-06-13T00:23:05.747Z",
+  "generatedAt": "2026-06-13T06:55:10.016Z",
   "dryRun": false,
   "packId": "openlands-standalone-edition",
   "displayName": "Openlands Standalone Edition",

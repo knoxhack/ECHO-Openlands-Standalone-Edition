@@ -1,7 +1,7 @@
 {
   "schema": "echo.openlands.edition.runtime_core_report.v1",
   "status": "passed",
-  "generatedAt": "2026-06-13T00:23:05.594Z",
+  "generatedAt": "2026-06-13T06:55:12.980Z",
   "dryRun": false,
   "packId": "openlands-standalone-edition",
   "displayName": "Openlands Standalone Edition",

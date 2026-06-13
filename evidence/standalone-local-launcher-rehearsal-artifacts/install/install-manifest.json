@@ -1,7 +1,7 @@
 {
   "schemaVersion": "echo.module.release.v1",
   "releaseId": "openlands-0.1.0-compiled",
-  "generatedAt": "2026-06-13T00:22:54.344Z",
+  "generatedAt": "2026-06-13T06:52:01.246Z",
   "sourceRepo": "https://github.com/knoxhack/ECHO-Modules",
   "provenance": {
     "sourceRepo": "https://github.com/knoxhack/ECHO-Modules",
@@ -67,8 +67,8 @@
         {
           "kind": "neoforge",
           "filename": "echoopenlandsprotocol-0.1.0-neoforge.jar",
-          "sha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
-          "size": 298027,
+          "sha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
+          "size": 289541,
           "downloadUrl": "",
           "runtimeTarget": "neoforge",
           "buildMode": "compiled-runtime",
@@ -80,8 +80,8 @@
         {
           "kind": "standalone",
           "filename": "echoopenlandsprotocol-0.1.0-standalone.jar",
-          "sha256": "b2b86850bbaf2638540c160778d78999fc10cf200f1a03bf6cdf9d15bee5a146",
-          "size": 298027,
+          "sha256": "6670f8c7c9eaf66ba15fa479e9bfcaa094b92f89847b1d05dbfcdc87ab41f886",
+          "size": 289541,
           "downloadUrl": "",
           "runtimeTarget": "standalone",
           "buildMode": "compiled-runtime",
@@ -92,8 +92,8 @@
         {
           "kind": "echo-addon",
           "filename": "echoopenlandsprotocol-0.1.0.echo-addon",
-          "sha256": "7249b0b7e6000348027317807dcc263b32b623dc5460bc22aa0b68b6eb665afe",
-          "size": 227696,
+          "sha256": "b95b83475d45aa56e8e85ec83b05990c7e1d903fcbdf58506bc2f8bf52457195",
+          "size": 216576,
           "downloadUrl": "",
           "runtimeTarget": "echo-native",
           "buildMode": "compiled-runtime",
@@ -105,7 +105,7 @@
         {
           "kind": "sources",
           "filename": "echoopenlandsprotocol-0.1.0-sources.jar",
-          "sha256": "7a775813d1e82d050a25b509892d2a0ff01209219dbdb6ca712e6c118e0f0058",
+          "sha256": "59bd541e7f633642dd4b5034800bc41d48135ddae0ac5cf644659d2afee17653",
           "size": 255724,
           "downloadUrl": "",
           "runtimeTarget": "sources",

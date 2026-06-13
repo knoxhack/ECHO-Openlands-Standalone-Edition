@@ -2,7 +2,7 @@
   "schema": "echo.openlands.edition.legal_content_audit_report.v1",
   "status": "preflight_passed",
   "publicReleaseAllowed": false,
-  "generatedAt": "2026-06-13T00:23:06.877Z",
+  "generatedAt": "2026-06-13T06:55:11.109Z",
   "dryRun": false,
   "packId": "openlands-standalone-edition",
   "displayName": "Openlands Standalone Edition",
@@ -27,7 +27,7 @@
     ]
   },
   "scanSummary": {
-    "publicIdentityValues": 1602,
+    "publicIdentityValues": 1606,
     "assetPaths": 262,
     "forbiddenPublicTerms": 22,
     "blockAssetsChecked": 26,
