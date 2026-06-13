@@ -165,5 +165,14 @@
   "artifactSha256": "47ce5ecd37e3bc051a2d01ec0d04cf7e419c99d8cccb4b057809dde0903ae858",
   "artifactSize": 211769,
   "releaseTag": "v0.1.0-openlands-standalone-edition",
-  "releaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition"
+  "releaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
+  "minecraft": "Standalone",
+  "runtime": {
+    "requiredJava": "25+"
+  },
+  "launch": {
+    "mainClass": "dev.echo.standalone.runtime.client.EchoClientMain",
+    "gameArgs": [],
+    "jvmArgs": []
+  }
 }
