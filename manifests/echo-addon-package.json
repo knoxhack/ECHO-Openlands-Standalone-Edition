@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "echo.addon.package.v1",
+  "id": "echoopenlandsprotocol",
+  "version": "0.1.0",
+  "publisher": {
+    "githubOwner": "knoxhack",
+    "githubRepo": "ECHO-Modules"
+  },
+  "targets": [
+    "native",
+    "neoforge",
+    "standalone"
+  ],
+  "dependencies": [
+    {
+      "id": "echoadaptercore",
+      "version": "*"
+    },
+    {
+      "id": "echoassetcore",
+      "version": "*"
+    },
+    {
+      "id": "echobiomecore",
+      "version": "*"
+    },
+    {
+      "id": "echocontentcore",
+      "version": "*"
+    },
+    {
+      "id": "echocore",
+      "version": "*"
+    },
+    {
+      "id": "echocreaturecore",
+      "version": "*"
+    },
+    {
+      "id": "echofoundationcore",
+      "version": "*"
+    },
+    {
+      "id": "echomaterialcore",
+      "version": "*"
+    },
+    {
+      "id": "echonetcore",
+      "version": "*"
+    },
+    {
+      "id": "echotoolcore",
+      "version": "*"
+    },
+    {
+      "id": "echostationcore",
+      "version": "*"
+    },
+    {
+      "id": "echoworldstarter",
+      "version": "*"
+    },
+    {
+      "id": "echocommonloot",
+      "version": "*"
+    },
+    {
+      "id": "echocreatureroles",
+      "version": "*"
+    },
+    {
+      "id": "echoprogressioncore",
+      "version": "*"
+    },
+    {
+      "id": "echorecipecore",
+      "version": "*"
+    },
+    {
+      "id": "echostructurecore",
+      "version": "*"
+    },
+    {
+      "id": "echoworldcore",
+      "version": "*"
+    }
+  ],
+  "artifacts": {
+    "native": "echoopenlandsprotocol-0.1.0.echo-addon",
+    "neoforge": "echoopenlandsprotocol-0.1.0-neoforge.jar",
+    "standalone": "echoopenlandsprotocol-0.1.0-standalone.jar",
+    "sources": "echoopenlandsprotocol-0.1.0-sources.jar"
+  },
+  "runtime": "echo-native",
+  "descriptor": "META-INF/echo.mod.json",
+  "runtimeJar": "lib/echoopenlandsprotocol-0.1.0-runtime.jar",
+  "buildMode": "compiled-runtime"
+}
