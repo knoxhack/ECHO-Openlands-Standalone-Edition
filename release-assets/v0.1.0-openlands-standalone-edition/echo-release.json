@@ -6,12 +6,12 @@
   "channel": "experimental",
   "releasedAt": "2026-06-14T01:26:57.383Z",
   "manifestAsset": "openlands-standalone-edition-experimental-0.1.0.pack.json",
-  "manifestSha256": "e7d3e2be905709fdb57a67440a3b6990339106aad47ae58cf1546eb1e9aceb09",
+  "manifestSha256": "1814e0eb548290f48a2757fceb973dae931f8cb52f81bb321aa5b77e9047edd2",
   "manifestSize": 53375,
   "artifactMode": "zip",
   "artifactAsset": "openlands-standalone-edition-0.1.0.zip",
-  "artifactSha256": "08e7045913810edf83435f1e066d2962502705106b8403b6b767855e5dafbc19",
-  "artifactSize": 112306557,
+  "artifactSha256": "58283037c43dfe493390d1ba8d16a13417ea16bf3d89fd66ffb5bbfae5fa75c7",
+  "artifactSize": 112271156,
   "moduleRelease": "modules-all-official-modpacks-runtime-fix-20260614",
   "packs": [
     {
@@ -27,14 +27,14 @@
     {
       "name": "openlands-standalone-edition-experimental-0.1.0.pack.json",
       "role": "pack-manifest",
-      "sha256": "e7d3e2be905709fdb57a67440a3b6990339106aad47ae58cf1546eb1e9aceb09",
+      "sha256": "1814e0eb548290f48a2757fceb973dae931f8cb52f81bb321aa5b77e9047edd2",
       "size": 53375
     },
     {
       "name": "openlands-standalone-edition-0.1.0.zip",
       "role": "pack-artifact",
-      "sha256": "08e7045913810edf83435f1e066d2962502705106b8403b6b767855e5dafbc19",
-      "size": 112306557
+      "sha256": "58283037c43dfe493390d1ba8d16a13417ea16bf3d89fd66ffb5bbfae5fa75c7",
+      "size": 112271156
     },
     {
       "name": "echoadaptercore-1.0.0-standalone.jar",

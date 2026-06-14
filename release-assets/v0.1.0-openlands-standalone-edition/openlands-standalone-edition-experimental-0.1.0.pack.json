@@ -1149,8 +1149,8 @@
       "legal_content_audit_missing"
     ]
   },
-  "artifactSha256": "cc5f506a9922013250e96d49aa8df10be219db7feb24e4446154832ca1489fe2",
-  "artifactSize": 113967781,
+  "artifactSha256": "58283037c43dfe493390d1ba8d16a13417ea16bf3d89fd66ffb5bbfae5fa75c7",
+  "artifactSize": 112271156,
   "releaseTag": "v0.1.0-openlands-standalone-edition",
   "releaseUrl": "https://github.com/knoxhack/ECHO-Openlands-Standalone-Edition/releases/tag/v0.1.0-openlands-standalone-edition",
   "minecraft": "Standalone",
