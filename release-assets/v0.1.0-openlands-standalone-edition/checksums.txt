@@ -1,3 +1,4 @@
-822c6bebdc879e823efc0a326e9cf89144c384500f965c99bac64f1afe7b2db1  echo-release.json
-072cbc3d15dcc1dfafaffcc408ae9dad5fc8c15a79d93ed7f119a7c50a7adea4  openlands-standalone-edition-0.1.0.zip
-8fce5d48e68d0b3fbd818d26671e444b4233e427fdc182fffd45208c4c986874  openlands-standalone-edition-experimental-0.1.0.pack.json
+8d5ad2dfcb6e115d7a48ae0e900e344444cad5596f4934673e0775ba05212f97  openlands-standalone-edition-experimental-0.1.0.pack.json
+9c86fcb8a8c39c9eddd56210f6084cc1e59a179ce0996a60daf2527b0f7047b2  echo-release.json
+d90a44bedeed4efbeee2cb823222a3bc4ef54135c562a8290557fb210b82aed3  openlands-standalone-edition-0.1.0.zip
+f052a19cf74dc855be37f79c5ccc2ef390afc4e256297ed151d4dd12e560a2c1  release-audit.json
