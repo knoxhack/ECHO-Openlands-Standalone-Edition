@@ -12,13 +12,13 @@
   "moduleCount": 42,
   "artifact": {
     "name": "openlands-standalone-edition-0.1.0.zip",
-    "sha256": "f1c95a37a50bf9ff39a04983ec4f60421417a8e3005040aadfb1870078d5048f",
-    "size": 112633318
+    "sha256": "65005cbd7f9cd3b0c7c53c2454ea4df62a17b7c19167a55b244aa8f229cb0543",
+    "size": 112632499
   },
   "manifest": {
     "name": "openlands-standalone-edition-experimental-0.1.0.pack.json",
-    "sha256": "e3f242f740f511f429376f6a613e6e5941926d5583e31b5fd6dd1f7ed9aafbe2",
-    "size": 56910
+    "sha256": "1a9fbb7e29f29a67cb11f87713c6f485e3025161edfd598081ec98c120606ede",
+    "size": 56680
   },
-  "generatedAt": "2026-06-16T01:23:04.276Z"
+  "generatedAt": "2026-06-16T02:21:45.691Z"
 }
