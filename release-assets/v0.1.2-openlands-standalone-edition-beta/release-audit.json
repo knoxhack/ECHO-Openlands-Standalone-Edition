@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "echo.official_modpack.release_audit.v1",
+  "status": "rebuilt-from-current-module-catalog",
+  "pack": "openlands-standalone-edition",
+  "name": "Openlands Standalone Edition",
+  "version": "0.1.2",
+  "channel": "beta",
+  "moduleRelease": "modules-beta-full-20260620",
+  "moduleSourceRevision": "ECHO-Modules modules-beta-full-20260620 (2a1c2ec8), 2026-06-20",
+  "releaseTag": "v0.1.2-openlands-standalone-edition-beta",
+  "sourceRepo": "knoxhack/ECHO-Openlands-Standalone-Edition",
+  "moduleCount": 42,
+  "artifact": {
+    "name": "openlands-standalone-edition-0.1.2.zip",
+    "sha256": "26e947191b78b5d3ef5d8ea9b5b8532c3d0e7f72baac9789fcd3997bcded29d9",
+    "size": 112715234
+  },
+  "manifest": {
+    "name": "openlands-standalone-edition-beta-0.1.2.pack.json",
+    "sha256": "ae45b1dcc2fa4742feec5d3477625a551fe6de38210199276fc5028cf945fc28",
+    "size": 55364
+  },
+  "generatedAt": "2026-06-20T04:41:58.075Z"
+}
